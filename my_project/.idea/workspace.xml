@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="my_project:war exploded" />
+      <artifact name="my_project:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a395293-e669-4369-885d-bb27c23e1111" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/client/ServerMessageHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/client/SocketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/entity/AsteroidCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/entity/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/game/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/main/MainClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/threads/InterfaceRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/config/ApplicationContextConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/listeners/SpringContextServletContextListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/repositories/CrudRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/services/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/services/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/src/main/webapp/signIn.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project/src/main/webapp/signIn.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/annotations/Mapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/controllers/ProductsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/controllers/SignInController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/controllers/SignUpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/services/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/services/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/servlets/MainServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/servlets/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/servlets/SignInServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/webapp/products.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/webapp/signIn.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/webapp/signUp.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/aspects/FileAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/controllers/FilesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/controllers/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/controllers/SignInController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/models/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/models/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJdbcImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/security/details/UserDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/security/details/UserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/security/init/SecurityWebApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/EmailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/MessageContentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/MessageContentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/file_upload.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/mail_template.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/signIn.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/url.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/url_mail_template.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/HomeWork20/src/com/company/LinkedListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/HomeWork20/src/com/company/LinkedListImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HomeWorks/HomeWork20/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/HomeWork20/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_client/src/main/java/client/SocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat_client/src/main/java/client/SocketClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_client/token.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat_client/token.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/dependency-reduced-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/deserializers/ProtocolDeserializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/helpers/MessageResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/helpers/ServerContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/models/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/models/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/models/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/AuthData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/Commandd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/Paginaton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/Payload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/ProductsList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/Token.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/protocols/JavaLabProtocol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/CrudRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/MessageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/MessageRepositoryJdbcImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/ProductRepositoryJdbcImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/RowMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/UserRepositoryJdbcImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/server/MultiServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/AnswerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/CommandService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/MessageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/TokenServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/start/MainServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat_server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chat_server/src/main/java/services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat_server/src/main/java/services/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReflectionContext/src/main/java/context/ReflectionContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReflectionContext/src/main/java/context/ReflectionContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebApp/src/main/java/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/src/main/java/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebApp/src/main/java/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/src/main/java/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebApp/src/main/java/repositories/UserRepositoryJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/src/main/java/repositories/UserRepositoryJdbcImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebApp/src/main/java/services/SignUpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/src/main/java/services/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebApp/src/main/java/services/SignUpServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebApp/src/main/java/servlets/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/src/main/java/servlets/SignUpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebApp/web/WEB-INF/pages/signUp.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebApp/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="30" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/MainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/SignInController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/file_upload.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="54" column="94" selection-start-line="54" selection-start-column="94" selection-end-line="54" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/services/FileService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/signIn.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="154" selection-start-line="154" selection-end-line="155" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/signUp.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="157" column="90" selection-start-line="157" selection-start-column="90" selection-end-line="157" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Aspect" />
+        <option value="@Aspect" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ini</find>
+      <find>init</find>
+      <find>contr</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/project/repositories/UserRepositoryJdbcImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/verification.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/project/security/details/UserDetailsImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/main.ftl" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/project/services/MessageContentService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/project/services/MessageContentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/services/EmailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/url.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/project/security/init/SecurityWebApplicationInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/services/AuthServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/aspects/FileAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/controllers/VerificationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/controllers/FilesController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/project/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/controllers/SignInController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/signUp.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/signIn.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/file_upload.ftl" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectId" id="1YfffnmMrrScmPnUogrRMwTKcKg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="aspects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="init" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/template" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.55185187" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\my_project\src\main\webapp\assets" />
+      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\my_project\src\main\webapp\template" />
+      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\lab_project\src\main\webapp" />
+      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\lab_project\src\main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\my_project\src\main\webapp\template" />
+      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\my_project\src\main\java\project\services" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/template" />
+      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\my_project\src\main\webapp" />
+      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\my_project\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="project.aspects" />
+      <recent name="project.repositories" />
+      <recent name="project.controllers" />
+      <recent name="project.models" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="project.services" />
+      <recent name="project.controllers" />
+      <recent name="project.dto" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.29" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="my_project:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_lab_project" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62050" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="my_project:war exploded" />
+          <artifact name="my_project:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a395293-e669-4369-885d-bb27c23e1111" name="Default Changelist" comment="" />
+      <created>1583179207068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583179207068</updated>
+      <workItem from="1583179211095" duration="290000" />
+      <workItem from="1583179664935" duration="27751000" />
+      <workItem from="1583343498968" duration="5364000" />
+      <workItem from="1583788010619" duration="8000" />
+      <workItem from="1583822030368" duration="3062000" />
+      <workItem from="1583840500539" duration="7229000" />
+      <workItem from="1583864551987" duration="18450000" />
+      <workItem from="1583950469726" duration="256000" />
+      <workItem from="1583951343646" duration="1812000" />
+      <workItem from="1583953270715" duration="24435000" />
+      <workItem from="1584006622675" duration="1816000" />
+      <workItem from="1584987745988" duration="145000" />
+      <workItem from="1584987904311" duration="9179000" />
+      <workItem from="1585040446775" duration="8512000" />
+      <workItem from="1585129891346" duration="1697000" />
+      <workItem from="1585151271966" duration="11804000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="22013000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.72080535" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5184136" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
+      <window_info anchor="bottom" id="PVS-Studio" order="8" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3295129" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="16" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="555" y="180" width="800" height="672" key="#Tomcat_Server" timestamp="1584989042586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="555" y="180" width="800" height="672" key="#Tomcat_Server/0.0.1920.1040@0.0.1920.1040" timestamp="1584989042586" />
+    <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584989710650">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584989710650" />
+    <state x="768" y="230" width="374" height="572" key="#com.intellij.ide.util.MemberChooser" timestamp="1584991804776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="768" y="230" width="374" height="572" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584991804776" />
+    <state x="808" y="411" width="293" height="211" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584987757385">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="411" width="293" height="211" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584987757385" />
+    <state x="738" y="260" width="424" height="506" key="FileChooserDialogImpl" timestamp="1584989039470">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="260" width="424" height="506" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584989039470" />
+    <state width="621" height="558" key="GridCell.Tab.0.bottom" timestamp="1584997507423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="621" height="558" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584997507423" />
+    <state width="621" height="558" key="GridCell.Tab.0.center" timestamp="1584997507422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="621" height="558" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584997507422" />
+    <state width="621" height="558" key="GridCell.Tab.0.left" timestamp="1584997507422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="621" height="558" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584997507422" />
+    <state width="621" height="558" key="GridCell.Tab.0.right" timestamp="1584997507422">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="621" height="558" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584997507422" />
+    <state width="621" height="558" key="GridCell.Tab.1.bottom" timestamp="1584997507423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="621" height="558" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584997507423" />
+    <state width="621" height="558" key="GridCell.Tab.1.center" timestamp="1584997507423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="621" height="558" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584997507423" />
+    <state width="621" height="558" key="GridCell.Tab.1.left" timestamp="1584997507423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="621" height="558" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584997507423" />
+    <state width="621" height="558" key="GridCell.Tab.1.right" timestamp="1584997507423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="621" height="558" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584997507423" />
+    <state width="621" height="558" key="GridCell.Tab.2.bottom" timestamp="1584997507424">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="621" height="558" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584997507424" />
+    <state width="621" height="558" key="GridCell.Tab.2.center" timestamp="1584997507423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="621" height="558" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584997507423" />
+    <state width="621" height="558" key="GridCell.Tab.2.left" timestamp="1584997507423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="621" height="558" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584997507423" />
+    <state width="621" height="558" key="GridCell.Tab.2.right" timestamp="1584997507423">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="621" height="558" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584997507423" />
+    <state x="443" y="96" width="1024" height="840" key="SettingsEditor" timestamp="1584987870892">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="443" y="96" width="1024" height="840" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584987870892" />
+    <state x="643" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1584987907824">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="643" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584987907824" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/verification.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/UserRepositoryJdbcImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-731">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#2204#2205#0" expanded="true" />
+            <element signature="e#2265#2266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/security/details/UserDetailsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/security/details/UserDetailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/main.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/advices/AfterUploadAdvice.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.2.4.RELEASE/spring-context-support-5.2.4.RELEASE.jar!/org/springframework/ui/freemarker/FreeMarkerTemplateUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/MessageContentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/MessageContentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/url_mail_template.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" selection-start-line="10" selection-end-line="36" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/url.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="4" column="6" selection-end-line="127" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/security/init/SecurityWebApplicationInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/EmailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
+          <folding>
+            <element signature="e#3646#3647#0" expanded="true" />
+            <element signature="e#3698#3699#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/aspects/FileAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/AuthServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/VerificationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/listeners/SpringContextServletContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/FilesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="30" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/SignInController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/signUp.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="157" column="90" selection-start-line="157" selection-start-column="90" selection-end-line="157" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/signIn.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="154" selection-start-line="154" selection-end-line="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/file_upload.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="54" column="94" selection-start-line="54" selection-start-column="94" selection-end-line="54" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/FileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>my_project:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.55185187" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.55185187" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>my_project</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.55185187" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
