@@ -4,116 +4,181 @@
     <artifacts-to-build>
       <artifact name="my_project:war exploded" />
       <artifact name="my_project:war exploded" />
+      <artifact name="my_project:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a395293-e669-4369-885d-bb27c23e1111" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/client/ServerMessageHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/client/SocketClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/entity/AsteroidCircle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/entity/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/game/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/main/MainClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../HomeWork3sem/GalaxyFX/src/main/java/threads/InterfaceRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/config/ApplicationContextConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/listeners/SpringContextServletContextListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/repositories/CrudRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/services/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/java/ru/itis/project/services/AuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/webapp/signIn.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Project/src/main/webapp/signIn.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/annotations/Mapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/controllers/ProductsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/controllers/SignInController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/controllers/SignUpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/repositories/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/services/AuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/services/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/servlets/MainServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/servlets/ProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/java/servlets/SignInServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/webapp/products.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/webapp/signIn.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WebApp/src/main/webapp/signUp.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/aspects/FileAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/controllers/FilesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/controllers/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/controllers/SignInController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/models/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/models/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJdbcImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/security/details/UserDetailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/security/details/UserDetailsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/security/init/SecurityWebApplicationInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/EmailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/MessageContentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/MessageContentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/file_upload.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/mail_template.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/signIn.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/url.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/url_mail_template.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HomeWorks/HomeWork20/src/com/company/LinkedListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/HomeWork20/src/com/company/LinkedListImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HomeWorks/HomeWork20/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HomeWorks/HomeWork20/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_client/src/main/java/client/SocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat_client/src/main/java/client/SocketClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_client/token.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat_client/token.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/dependency-reduced-pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/deserializers/ProtocolDeserializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/helpers/MessageResolver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/helpers/ServerContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/models/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/models/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/AuthData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/Commandd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/Paginaton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/Payload.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/ProductsList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/Response.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/payload/Token.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/protocols/JavaLabProtocol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/CrudRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/MessageRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/MessageRepositoryJdbcImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/ProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/ProductRepositoryJdbcImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/RowMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/repositories/UserRepositoryJdbcImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/server/MultiServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/AnswerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/AuthService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/CommandService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/MessageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/TokenServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/services/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server — копия/src/main/java/start/MainServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat_server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chat_server/src/main/java/services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chat_server/src/main/java/services/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ReflectionContext/src/main/java/context/ReflectionContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ReflectionContext/src/main/java/context/ReflectionContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebApp/src/main/java/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/src/main/java/dto/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebApp/src/main/java/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/src/main/java/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebApp/src/main/java/repositories/UserRepositoryJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/src/main/java/repositories/UserRepositoryJdbcImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebApp/src/main/java/services/SignUpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/src/main/java/services/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebApp/src/main/java/services/SignUpServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebApp/src/main/java/servlets/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/src/main/java/servlets/SignUpServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebApp/web/WEB-INF/pages/signUp.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WebApp/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebApp/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/my_project_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/my_project_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/aspects/FileAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/config/ApplicationContextConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/controllers/FilesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/controllers/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/controllers/SignInController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/controllers/SignUpController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/controllers/VerificationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/dto/UserDto$UserDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/dto/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/listeners/SpringContextServletContextListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/File$FileBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/File.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/Mail$MailBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/Mail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/State.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/VerificationToken$VerificationTokenBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/VerificationToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/CrudRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/FileRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/FileRepositoryJdbcImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/TokenRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/TokenRepositoryJdbcImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/UserRepositoryJdbcImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/security/config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/security/details/UserDetailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/security/details/UserDetailsImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/security/init/SecurityWebApplicationInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/AuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/AuthServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/EmailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/EmailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/FileService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/FileServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/MessageContentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/MessageContentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/TokenService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/TokenServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/servlets/MainServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/servlets/SignUpServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/servlets/VerificationServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/HikariCP-3.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/aspectjrt-1.9.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/aspectjweaver-1.9.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/freemarker-2.3.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/jackson-core-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/jackson-databind-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/javax.mail-1.6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/jjwt-0.9.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/postgresql-42.2.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-aop-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-beans-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-context-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-context-support-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-core-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-jcl-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-security-config-5.3.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-security-core-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-security-web-5.3.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/assets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/lib/freemarker-2.3.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/file_upload.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/mail_template.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/main.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/signIn.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/signUp.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/url.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/url_mail_template.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/verification.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/models/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/models/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJdbcImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/my_project.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/config/ApplicationContextConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/config/ApplicationContextConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/models/File$FileBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/models/File$FileBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/models/File.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/models/File.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/repositories/FileRepositoryJdbcImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/repositories/FileRepositoryJdbcImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/security/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/security/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/services/FileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/services/FileServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/META-INF/lab_project.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/META-INF/my_project.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/config/ApplicationContextConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/controllers/FilesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/controllers/SignUpController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/dto/UserDto$UserDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/dto/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/listeners/SpringContextServletContextListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/models/Mail$MailBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/models/Mail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/models/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/models/VerificationToken$VerificationTokenBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/models/VerificationToken.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/repositories/CrudRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/repositories/TokenRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/repositories/TokenRepositoryJdbcImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/repositories/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/repositories/UserRepositoryJdbcImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/AuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/AuthServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/EmailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/EmailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/MessageContentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/MessageContentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/TokenService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/TokenServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/servlets/MainServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/servlets/SignUpServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/servlets/VerificationServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/templates/mail_template.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/HikariCP-3.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/freemarker-2.3.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/jackson-core-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/jackson-databind-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/javax.mail-1.6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/jjwt-0.9.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/postgresql-42.2.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-beans-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-context-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-context-support-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-core-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-jcl-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-security-core-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/assets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/lib/freemarker-2.3.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/template/mail_template.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/template/main.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/template/signUp.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/template/verification.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/lib/commons-codec-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/lib/spring-expression-5.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/lib/spring-security-core-5.3.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/lib/spring-security-oauth2-2.4.0.RELEASE.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -127,39 +192,21 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="30" selection-end-column="25" />
+            <state relative-caret-position="349">
+              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/MainController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/FilesController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/SignInController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            <state relative-caret-position="372">
+              <caret line="32" column="88" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -168,28 +215,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/file_upload.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="54" column="94" selection-start-line="54" selection-start-column="94" selection-end-line="54" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/project/services/FileService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="102">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="485">
+              <caret line="145" column="21" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -197,26 +235,40 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+            <state relative-caret-position="354">
+              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/signIn.ftl">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="154" selection-start-line="154" selection-end-line="155" />
+            <state relative-caret-position="459">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#375#376#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/signUp.ftl">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/models/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="157" column="90" selection-start-line="157" selection-start-column="90" selection-end-line="157" selection-end-column="90" />
+            <state relative-caret-position="238">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/models/File.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -241,7 +293,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java" root0="FORCE_HIGHLIGHTING" />
@@ -253,14 +305,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/template/verification.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/project/security/details/UserDetailsImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/template/main.ftl" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/project/services/MessageContentService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/project/services/MessageContentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/services/EmailServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/template/url.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/project/security/init/SecurityWebApplicationInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/services/AuthServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/aspects/FileAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java" />
@@ -271,8 +321,15 @@
         <option value="$PROJECT_DIR$/src/main/java/project/controllers/SignInController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/template/signUp.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/template/signIn.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/template/file_upload.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJdbcImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/models/File.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/project/models/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java" />
       </list>
     </option>
   </component>
@@ -290,8 +347,24 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="my_project" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="my_project" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
@@ -302,7 +375,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,15 +415,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="aspects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -370,7 +433,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
@@ -379,18 +442,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="init" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
@@ -401,49 +453,12 @@
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -452,10 +467,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -466,7 +482,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.55185187" />
+    <property name="project.structure.side.proportion" value="0.21111111" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -509,7 +525,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.29" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="my_project:war exploded">
           <settings>
@@ -578,6 +594,7 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="my_project:war exploded" />
           <artifact name="my_project:war exploded" />
+          <artifact name="my_project:war exploded" />
         </option>
       </method>
     </configuration>
@@ -630,17 +647,20 @@
       <workItem from="1585040446775" duration="8512000" />
       <workItem from="1585129891346" duration="1697000" />
       <workItem from="1585151271966" duration="11804000" />
+      <workItem from="1585214954127" duration="599000" />
+      <workItem from="1585330079712" duration="3380000" />
+      <workItem from="1585574478343" duration="10105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22013000" />
+    <option name="totallyTimeSpent" value="36097000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.72080535" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23087248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -651,7 +671,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5184136" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -668,7 +688,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -757,22 +777,38 @@
     </state>
     <state x="643" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584987907824" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>entityManager.createQuery(&quot;select f from File f&quot;, File.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/template/verification.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
           <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/UserRepositoryJdbcImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="e#2204#2205#0" expanded="true" />
-            <element signature="e#2265#2266#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -798,13 +834,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project/advices/AfterUploadAdvice.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.2.4.RELEASE/spring-context-support-5.2.4.RELEASE.jar!/org/springframework/ui/freemarker/FreeMarkerTemplateUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -887,17 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
-          <folding>
-            <element signature="e#3646#3647#0" expanded="true" />
-            <element signature="e#3698#3699#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project/aspects/FileAspect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -919,26 +937,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/listeners/SpringContextServletContextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/FilesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="374">
           <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="30" selection-end-column="25" />
         </state>
       </provider>
@@ -950,16 +951,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="391">
           <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -967,45 +961,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/signUp.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/file_upload.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="157" column="90" selection-start-line="157" selection-start-column="90" selection-end-line="157" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+        <state relative-caret-position="621">
+          <caret line="54" column="94" selection-start-line="54" selection-start-column="94" selection-end-line="54" selection-end-column="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/template/signIn.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="621">
           <caret line="154" selection-start-line="154" selection-end-line="155" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/file_upload.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/signUp.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="54" column="94" selection-start-line="54" selection-start-column="94" selection-end-line="54" selection-end-column="94" />
+        <state relative-caret-position="621">
+          <caret line="157" column="90" selection-start-line="157" selection-start-column="90" selection-end-line="157" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/listeners/SpringContextServletContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/TokenRepositoryJdbcImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-518">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/UserRepositoryJdbcImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/FilesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="32" column="88" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project/services/FileService.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJdbcImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <caret line="15" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="128" column="64" selection-start-line="128" selection-start-column="64" selection-end-line="128" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3646#3647#0" expanded="true" />
+            <element signature="e#3700#3701#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="145" column="21" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/models/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+        <state relative-caret-position="354">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1019,7 +1103,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.55185187" />
+                <option value="0.21111111" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1067,7 +1151,6 @@
             <option name="proportions">
               <list>
                 <option value="0.55185187" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

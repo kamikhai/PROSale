@@ -8,13 +8,12 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
 import project.models.File;
-import project.models.User;
 
 import java.sql.PreparedStatement;
 import java.util.List;
 import java.util.Optional;
 
-@Component
+@Component(value = "fileRepositoryJdbc")
 public class FileRepositoryJdbcImpl implements FileRepository {
     private final String table_name = "files_table";
     //language=SQL
@@ -31,7 +30,7 @@ public class FileRepositoryJdbcImpl implements FileRepository {
         File.builder()
                 .id(row.getLong("id"))
                 .name(row.getString("name"))
-                .dbName(row.getString("db_name"))
+                .db_Name(row.getString("db_name"))
                 .size(row.getLong("size"))
                 .type(row.getString("type"))
                 .url(row.getString("url"))
@@ -59,7 +58,7 @@ public class FileRepositoryJdbcImpl implements FileRepository {
             PreparedStatement preparedStatement =
                     connection.prepareStatement(USER_INSERT, new String[]{"id"});
             preparedStatement.setString(1, model.getName());
-            preparedStatement.setString(2, model.getDbName());
+            preparedStatement.setString(2, model.getDb_Name());
             preparedStatement.setLong(3, model.getSize());
             preparedStatement.setString(4, model.getType());
             preparedStatement.setString(5, model.getUrl());

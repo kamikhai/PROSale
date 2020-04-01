@@ -1,6 +1,7 @@
 package project.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
@@ -16,6 +17,7 @@ public class FileServiceImpl implements FileService {
     @Autowired
     private Environment environment;
     @Autowired
+    @Qualifier(value = "fileRepositoryJpa")
     private FileRepository fileRepository;
     private final int length = 40;
 
@@ -32,7 +34,7 @@ public class FileServiceImpl implements FileService {
         }
         fileRepository.save(project.models.File.builder()
                             .name(name)
-                            .dbName(dbName)
+                            .db_Name(dbName)
                             .size(size)
                             .type(type)
                             .url("localhost:8080/files/"+dbName+type)
