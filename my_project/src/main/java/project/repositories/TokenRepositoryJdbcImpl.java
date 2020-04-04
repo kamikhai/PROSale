@@ -77,5 +77,9 @@ public class TokenRepositoryJdbcImpl implements TokenRepository {
     }
 
     @Override
-    public void delete(Long id) {}
+    public boolean delete(Long aLong) {
+        return false;
+    }
+
+
 }

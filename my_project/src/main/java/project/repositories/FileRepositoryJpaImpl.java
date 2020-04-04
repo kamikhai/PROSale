@@ -6,7 +6,6 @@ import project.models.File;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
 import java.util.List;
 import java.util.Optional;
 
@@ -37,11 +36,13 @@ public class FileRepositoryJpaImpl implements FileRepository{
 
     @Override
     @Transactional
-    public void delete(Long id) {
+    public boolean delete(Long id) {
         Optional<File> file = find(id);
         if (file.isPresent()) {
-            entityManager.remove(file);
+            entityManager.remove(file.get());
+            return true;
         }
+        return false;
     }
 
 }

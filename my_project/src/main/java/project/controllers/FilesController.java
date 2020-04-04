@@ -33,6 +33,7 @@ public class FilesController {
         return ResponseEntity.ok().contentType(MediaType.IMAGE_JPEG).body(fileService.get(fileName));
     }
 
+
     @PreAuthorize("isAuthenticated()")
     @RequestMapping(value = "/storage", method = RequestMethod.GET)
     public ModelAndView getStoragePage() {

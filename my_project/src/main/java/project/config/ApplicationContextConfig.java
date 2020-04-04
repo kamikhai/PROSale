@@ -3,11 +3,9 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
@@ -15,6 +13,7 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -25,6 +24,8 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 import project.security.details.UserDetailServiceImpl;
 import project.services.FileService;
+import project.services.ParseService;
+import project.services.ParseServiceImpl;
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
@@ -35,8 +36,10 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 @Configuration
 @PropertySource("classpath:application.properties")
-@ComponentScan(basePackages = "project")
+@ComponentScan(basePackages = "project", excludeFilters={
+        @ComponentScan.Filter(type= FilterType.ASSIGNABLE_TYPE, value= ParseService.class)})
 @EnableTransactionManagement
+@EnableScheduling
 public class ApplicationContextConfig {
 
     @Autowired
@@ -118,7 +121,7 @@ public class ApplicationContextConfig {
 //
         LocalContainerEntityManagerFactoryBean entityManagerFactory = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactory.setDataSource(hikariDataSource());
-        entityManagerFactory.setPackagesToScan("project");
+        entityManagerFactory.setPackagesToScan("project.models");
         entityManagerFactory.setJpaVendorAdapter(hibernateJpaVendorAdapter);
         entityManagerFactory.setJpaProperties(additionalProperties());
         return entityManagerFactory;

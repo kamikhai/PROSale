@@ -1,0 +1,29 @@
+GET http://localhost:8080/api/sites-management/sites/2
+Accept: */*
+Cache-Control: no-cache
+
+
+
+###
+
+POST http://localhost:8080/api/sites-management/sites
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{
+  "data": {
+    "store_name": "HM"
+  }
+}
+
+
+###
+
+DELETE http://localhost:8080/api/sites-management/sites/6
+Accept: */*
+Cache-Control: no-cache
+
+
+
+###

@@ -10,7 +10,6 @@ import project.models.VerificationToken;
 import project.repositories.TokenRepository;
 import project.repositories.UserRepository;
 
-import java.sql.Timestamp;
 import java.time.Instant;
 import java.util.*;
 

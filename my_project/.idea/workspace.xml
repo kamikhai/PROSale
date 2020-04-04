@@ -9,179 +9,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a395293-e669-4369-885d-bb27c23e1111" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/controllers/ProductsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/controllers/ProductsRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/controllers/ProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/controllers/SitesRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/dto/ResponseProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/dto/ResponseProductsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/dto/ResponseSiteDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/dto/ResponseSitesDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/dto/SiteDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/models/Url.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/models/Who.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/repositories/ProductRepositoryJpaImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/repositories/SiteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/repositories/SiteRepositoryJpaImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/ParseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/ParseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/SiteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/project/services/SiteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/http/rest_api.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/parts/header.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/product.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/profile.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/my_project_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/my_project_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/aspects/FileAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/config/ApplicationContextConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/controllers/FilesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/controllers/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/controllers/SignInController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/controllers/SignUpController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/controllers/VerificationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/dto/UserDto$UserDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/dto/UserDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/listeners/SpringContextServletContextListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/File$FileBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/File.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/Mail$MailBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/Mail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/VerificationToken$VerificationTokenBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/models/VerificationToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/CrudRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/FileRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/FileRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/TokenRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/TokenRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/repositories/UserRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/security/config/WebSecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/security/details/UserDetailServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/security/details/UserDetailsImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/security/init/SecurityWebApplicationInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/AuthService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/AuthServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/EmailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/EmailServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/FileService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/FileServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/MessageContentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/MessageContentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/TokenService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/services/TokenServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/servlets/MainServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/servlets/SignUpServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/classes/project/servlets/VerificationServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/HikariCP-3.4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/aspectjrt-1.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/aspectjweaver-1.9.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/freemarker-2.3.29.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/jackson-core-2.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/jackson-databind-2.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/javax.mail-1.6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/jjwt-0.9.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/postgresql-42.2.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-aop-5.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-beans-5.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-context-5.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-context-support-5.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-core-5.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-jcl-5.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-security-config-5.3.0.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-security-core-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-security-web-5.3.0.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/assets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/lib/freemarker-2.3.29.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/file_upload.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/mail_template.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/main.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/signIn.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/signUp.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/url.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/url_mail_template.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/my_project_war_exploded/template/verification.ftl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/models/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/models/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controllers/FilesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controllers/FilesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controllers/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controllers/SignInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/models/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/models/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/repositories/CrudRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/repositories/CrudRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/repositories/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/repositories/FileRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJdbcImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/repositories/TokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/repositories/TokenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/repositories/TokenRepositoryJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/repositories/TokenRepositoryJdbcImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/repositories/UserRepositoryJdbcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/repositories/UserRepositoryJdbcImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/my_project.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/services/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/services/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/services/TokenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/services/TokenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/servlets/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/servlets/SignUpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/servlets/VerificationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/servlets/VerificationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/mail_template.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/mail_template.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/main.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/signIn.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/signIn.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/signUp.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/signUp.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/url.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/url.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/url_mail_template.ftl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/project/config/ApplicationContextConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/config/ApplicationContextConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/models/File$FileBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/models/File$FileBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/models/File.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/models/File.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/controllers/FilesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/controllers/FilesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/controllers/SignInController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/controllers/SignInController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/controllers/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/controllers/SignUpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/models/Mail$MailBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/models/Mail$MailBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/models/Mail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/models/Mail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/repositories/CrudRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/repositories/CrudRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/project/repositories/FileRepositoryJdbcImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/repositories/FileRepositoryJdbcImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/repositories/FileRepositoryJpaImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/repositories/FileRepositoryJpaImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/repositories/TokenRepositoryJdbcImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/repositories/TokenRepositoryJdbcImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/repositories/UserRepositoryJdbcImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/repositories/UserRepositoryJdbcImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/project/security/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/security/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/project/services/FileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/services/FileServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/META-INF/lab_project.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/META-INF/my_project.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/config/ApplicationContextConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/controllers/FilesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/controllers/SignUpController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/dto/UserDto$UserDtoBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/dto/UserDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/listeners/SpringContextServletContextListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/models/Mail$MailBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/models/Mail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/models/User$UserBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/models/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/models/VerificationToken$VerificationTokenBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/models/VerificationToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/repositories/CrudRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/repositories/TokenRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/repositories/TokenRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/repositories/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/repositories/UserRepositoryJdbcImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/AuthService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/AuthServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/EmailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/EmailServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/MessageContentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/MessageContentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/TokenService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/services/TokenServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/servlets/MainServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/servlets/SignUpServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/project/servlets/VerificationServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/classes/templates/mail_template.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/dispatcherServlet-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/HikariCP-3.4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/freemarker-2.3.29.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/jackson-core-2.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/jackson-databind-2.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/javax.mail-1.6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/jjwt-0.9.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/postgresql-42.2.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-beans-5.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-context-5.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-context-support-5.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-core-5.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-jcl-5.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-security-core-5.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/assets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/lib/freemarker-2.3.29.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/template/mail_template.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/template/main.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/template/signUp.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/lab_project-1.0.0/template/verification.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/lib/commons-codec-1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/lib/spring-expression-5.2.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/lib/spring-security-core-5.3.0.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/lib/spring-security-oauth2-2.4.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/services/TokenServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/services/TokenServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/servlets/SignUpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/servlets/SignUpServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/project/servlets/VerificationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/project/servlets/VerificationServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/config/ApplicationContextConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/config/ApplicationContextConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/controllers/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/controllers/SignUpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/models/Mail$MailBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/models/Mail$MailBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/models/Mail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/models/Mail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/repositories/FileRepositoryJpaImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/repositories/FileRepositoryJpaImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/repositories/UserRepositoryJdbcImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/repositories/UserRepositoryJdbcImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/services/TokenServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/services/TokenServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/servlets/SignUpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/servlets/SignUpServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/servlets/VerificationServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/my_project-1.0.0/WEB-INF/classes/project/servlets/VerificationServlet.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,81 +106,88 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/SiteRepositoryJpaImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/FilesController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="32" column="88" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
+            <state relative-caret-position="187">
+              <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#0#20#1" expanded="true" />
+                <element signature="e#0#48#1" expanded="true" />
+                <element signature="e#0#407#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/services/FileService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/SitesRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="145" column="21" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
+            <state relative-caret-position="782">
+              <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1639#1640#0" expanded="true" />
+                <element signature="e#1684#1685#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/services/ParseServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            <state relative-caret-position="170">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/models/User.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/ProductsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="400">
+              <caret line="61" column="73" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="61" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/project/models/File.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            <state relative-caret-position="375">
+              <caret line="133" column="58" selection-start-line="133" selection-start-column="58" selection-end-line="133" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/template/product.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -280,8 +199,9 @@
       <list>
         <option value="Aspect" />
         <option value="@Aspect" />
-        <option value="Enum" />
+        <option value="HTML File" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -290,46 +210,70 @@
       <find>ini</find>
       <find>init</find>
       <find>contr</find>
+      <find>product_p</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response1.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/project/repositories/UserRepositoryJdbcImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/template/verification.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/project/security/details/UserDetailsImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/template/main.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/project/services/MessageContentService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/project/services/MessageContentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/project/services/EmailServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/template/url.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/project/security/init/SecurityWebApplicationInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/project/services/AuthServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/project/aspects/FileAspect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/project/controllers/VerificationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/controllers/FilesController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/styles/main_styles.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/main_styles.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/products.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/signIn2.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/signUp2.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/url_mail_template.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/project/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/mail_template.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/url.ftl" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/main.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/project/controllers/SignInController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/controllers/ProfileController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/profile.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/template/signUp.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/template/signIn.ftl" />
-        <option value="$PROJECT_DIR$/src/main/webapp/template/file_upload.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/dto/ResponseProductsDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/dto/ResponseSitesDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/dto/ResponseProductDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/dto/ResponseSiteDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/controllers/ProductsRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/dto/SiteDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/repositories/CrudRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJdbcImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/project/models/File.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/project/models/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/repositories/TokenRepositoryJdbcImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/repositories/UserRepositoryJdbcImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/repositories/SiteRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/services/SiteServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/controllers/SitesRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" />
+        <option value="$PROJECT_DIR$/src/main/java/project/models/Who.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/models/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/models/Url.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/models/Site.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/parts/header.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/project/services/SiteService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/services/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/services/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/repositories/ProductRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/repositories/ProductRepositoryJpaImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/project/controllers/ProductsController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/template/product.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" />
+        <option value="$PROJECT_DIR$/src/main/java/project/repositories/SiteRepositoryJpaImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/http/rest_api.http" />
+        <option value="$PROJECT_DIR$/src/main/java/project/services/ParseServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -363,8 +307,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
@@ -375,6 +319,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -433,6 +378,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="listeners" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -451,14 +414,99 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="details" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="init" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="parts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -467,11 +515,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/template" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -487,29 +536,638 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\my_project\src\main\webapp\assets" />
-      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\my_project\src\main\webapp\template" />
-      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\lab_project\src\main\webapp" />
-      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\lab_project\src\main" />
+      <recent name="D:\Документы\Универ\2к2с\project\my_project\src\main\webapp\assets" />
+      <recent name="D:\Документы\Универ\2к2с\project\my_project\src\main\webapp\template" />
+      <recent name="D:\Документы\Универ\2к2с\project\my_project\src\main\webapp" />
+      <recent name="D:\Документы\Универ\2к2с\project\my_project\src\main\resources" />
+      <recent name="D:\Документы\Универ\2к2с\project\my_project\src\main\webapp\assets\styles" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Документы\Универ\2к2с\project\my_project\src\main\webapp\template" />
+      <recent name="D:\Документы\Универ\2к2с\project\my_project\src\main\webapp\assets" />
+      <recent name="D:\Документы\Универ\2к2с\project\my_project\src\main\java\project\repositories" />
       <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\my_project\src\main\webapp\template" />
       <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\my_project\src\main\java\project\services" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/template" />
-      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\my_project\src\main\webapp" />
-      <recent name="C:\Users\pc\Desktop\khairullina_11_802\JavaLab\my_project\src\main\webapp\WEB-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="project.aspects" />
+      <recent name="project.dto" />
+      <recent name="project.services" />
       <recent name="project.repositories" />
-      <recent name="project.controllers" />
-      <recent name="project.models" />
+      <recent name="project.parse" />
+      <recent name="project.aspects" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="project.services" />
+      <recent name="project.repositories" />
       <recent name="project.controllers" />
       <recent name="project.dto" />
     </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites/6" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;data&quot;: {&#10;    &quot;store_name&quot;: &quot;HM&quot;&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;data&quot;: {&#10;    &quot;id&quot; : 10,&#10;    &quot;store_name&quot;: &quot;HM&quot;&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&#10;  &quot;data&quot;: {&#10;    &quot;store_name&quot;: &quot;HM&quot;,&#10;    &quot;productsTag&quot;: &quot;ul.products-listing.small&quot;,&#10;    &quot;productItemTag&quot;: &quot;li.product-item&quot;,&#10;    &quot;siteUrl&quot;: &quot;https://www2.hm.com&quot;,&#10;    &quot;productLinkTag&quot;: &quot;a.link&quot;,&#10;    &quot;productLink&quot;: &quot;href&quot;,&#10;    &quot;productImgTag&quot;: &quot;img&quot;,&#10;    &quot;productImg&quot;: &quot;data-src&quot;,&#10;    &quot;productName&quot;: &quot;a.link&quot;,&#10;    &quot;newPriceTag&quot;: &quot;span.price.sale&quot;,&#10;    &quot;oldPriceTag&quot;: &quot;span.price.regular&quot;,&#10;    &quot;hasJS&quot;: false&#10;  }&#10;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;Reserve&quot;,&quot;saleUrl&quot;:&quot;https://www.reserved.com/ru/ru/sale2-ru/woma&quot;,&quot;productsTag&quot;:&quot;section#categoryProducts.es-products&quot;,&quot;productItemTag&quot;:&quot;article.es-product&quot;,&quot;siteUrl&quot;:&quot;&quot;,&quot;productLinkTag&quot;:&quot;a.es-product-photo&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;figcaption.es-product-name a&quot;,&quot;newPriceTag&quot;:&quot;p.es-discount-price span&quot;,&quot;oldPriceTag&quot;:&quot;p.es-regular-price span&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-CSRF-TOKEN" />
+                <option name="value" value="B0B9CCE1B8F4B0771BA32895E87CFA6D" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;Reserve&quot;,&quot;saleUrl&quot;:&quot;https://www.reserved.com/ru/ru/sale2-ru/woma&quot;,&quot;productsTag&quot;:&quot;section#categoryProducts.es-products&quot;,&quot;productItemTag&quot;:&quot;article.es-product&quot;,&quot;siteUrl&quot;:&quot;&quot;,&quot;productLinkTag&quot;:&quot;a.es-product-photo&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;figcaption.es-product-name a&quot;,&quot;newPriceTag&quot;:&quot;p.es-discount-price span&quot;,&quot;oldPriceTag&quot;:&quot;p.es-regular-price span&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-CSRF-TOKEN" />
+                <option name="value" value="B0B9CCE1B8F4B0771BA32895E87CFA6D" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="${_csrf.parameterName}" />
+                <option name="value" value="${_csrf.token}" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;Reserve&quot;,&quot;saleUrl&quot;:&quot;https://www.reserved.com/ru/ru/sale2-ru/woma&quot;,&quot;productsTag&quot;:&quot;section#categoryProducts.es-products&quot;,&quot;productItemTag&quot;:&quot;article.es-product&quot;,&quot;siteUrl&quot;:&quot;&quot;,&quot;productLinkTag&quot;:&quot;a.es-product-photo&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;figcaption.es-product-name a&quot;,&quot;newPriceTag&quot;:&quot;p.es-discount-price span&quot;,&quot;oldPriceTag&quot;:&quot;p.es-regular-price span&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-CSRF-TOKEN" />
+                <option name="value" value="CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="${_csrf.parameterName}" />
+                <option name="value" value="${_csrf.token}" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;Reserve&quot;,&quot;saleUrl&quot;:&quot;https://www.reserved.com/ru/ru/sale2-ru/woma&quot;,&quot;productsTag&quot;:&quot;section#categoryProducts.es-products&quot;,&quot;productItemTag&quot;:&quot;article.es-product&quot;,&quot;siteUrl&quot;:&quot;&quot;,&quot;productLinkTag&quot;:&quot;a.es-product-photo&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;figcaption.es-product-name a&quot;,&quot;newPriceTag&quot;:&quot;p.es-discount-price span&quot;,&quot;oldPriceTag&quot;:&quot;p.es-regular-price span&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-CSRF-TOKEN" />
+                <option name="value" value="AAAAAAAAAAAAAAAAAAAA" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="${_csrf.parameterName}" />
+                <option name="value" value="${_csrf.token}" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;Reserve&quot;,&quot;saleUrl&quot;:&quot;https://www.reserved.com/ru/ru/sale2-ru/woma&quot;,&quot;productsTag&quot;:&quot;section#categoryProducts.es-products&quot;,&quot;productItemTag&quot;:&quot;article.es-product&quot;,&quot;siteUrl&quot;:&quot;&quot;,&quot;productLinkTag&quot;:&quot;a.es-product-photo&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;figcaption.es-product-name a&quot;,&quot;newPriceTag&quot;:&quot;p.es-discount-price span&quot;,&quot;oldPriceTag&quot;:&quot;p.es-regular-price span&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="${_csrf.parameterName}" />
+                <option name="value" value="${_csrf.token}" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;Reserve&quot;,&quot;saleUrl&quot;:&quot;https://www.reserved.com/ru/ru/sale2-ru/woma&quot;,&quot;productsTag&quot;:&quot;section#categoryProducts.es-products&quot;,&quot;productItemTag&quot;:&quot;article.es-product&quot;,&quot;siteUrl&quot;:&quot;&quot;,&quot;productLinkTag&quot;:&quot;a.es-product-photo&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;figcaption.es-product-name a&quot;,&quot;newPriceTag&quot;:&quot;p.es-discount-price span&quot;,&quot;oldPriceTag&quot;:&quot;p.es-regular-price span&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites/7" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;Blabl&quot;,&quot;saleUrl&quot;:&quot;https://www.reserved.com/ru/ru/sale2-ru/woma&quot;,&quot;productsTag&quot;:&quot;section#categoryProducts.es-products&quot;,&quot;productItemTag&quot;:&quot;article.es-product&quot;,&quot;siteUrl&quot;:&quot;&quot;,&quot;productLinkTag&quot;:&quot;a.es-product-photo&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;figcaption.es-product-name a&quot;,&quot;newPriceTag&quot;:&quot;p.es-discount-price span&quot;,&quot;oldPriceTag&quot;:&quot;p.es-regular-price span&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="page" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="size" />
+                <option name="value" value="4" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="sort" />
+                <option name="value" value="id" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites/7" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;Blabla&quot;,&quot;saleUrl&quot;:&quot;https://www.reserved.com/ru/ru/sale2-ru/woma&quot;,&quot;productsTag&quot;:&quot;section#categoryProducts.es-products&quot;,&quot;productItemTag&quot;:&quot;article.es-product&quot;,&quot;siteUrl&quot;:&quot;&quot;,&quot;productLinkTag&quot;:&quot;a.es-product-photo&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;figcaption.es-product-name a&quot;,&quot;newPriceTag&quot;:&quot;p.es-discount-price span&quot;,&quot;oldPriceTag&quot;:&quot;p.es-regular-price span&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="{&quot;id&quot;" />
+                <option name="value" value="3,&quot;store_name&quot;:&quot;Reserve&quot;,&quot;saleUrl&quot;:&quot;https://www.reserved.com/ru/ru/sale2-ru/woma&quot;,&quot;productsTag&quot;:&quot;section#categoryProducts.es-products&quot;,&quot;productItemTag&quot;:&quot;article.es-product&quot;,&quot;siteUrl&quot;:&quot;&quot;,&quot;productLinkTag&quot;:&quot;a.es-product-photo&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;figcaption.es-product-name a&quot;,&quot;newPriceTag&quot;:&quot;p.es-discount-price span&quot;,&quot;oldPriceTag&quot;:&quot;p.es-regular-price span&quot;,&quot;hasJS&quot;:false}" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;Reserved&quot;,&quot;saleUrl&quot;:&quot;https://www.reserved.com/ru/ru/sale2-ru/woman&quot;,&quot;productsTag&quot;:&quot;section#categoryProducts.es-products&quot;,&quot;productItemTag&quot;:&quot;article.es-product&quot;,&quot;siteUrl&quot;:&quot;&quot;,&quot;productLinkTag&quot;:&quot;a.es-product-photo&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;figcaption.es-product-name a&quot;,&quot;newPriceTag&quot;:&quot;p.es-discount-price span&quot;,&quot;oldPriceTag&quot;:&quot;p.es-regular-price span&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;Reserved&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;Reserved&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;H&amp;M&quot;,&quot;saleUrl&quot;:&quot;https://www2.hm.com/ru_ru/sale/shopbyproductladies/view-all.html&quot;,&quot;productsTag&quot;:&quot;ul.products-listing.small&quot;,&quot;productItemTag&quot;:&quot;li.product-item&quot;,&quot;siteUrl&quot;:&quot;https://www2.hm.com&quot;,&quot;productLinkTag&quot;:&quot;a.link&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;a.link&quot;,&quot;newPriceTag&quot;:&quot;span.price.sale&quot;,&quot;oldPriceTag&quot;:&quot;span.price.regular&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;id&quot;:7,&quot;store_name&quot;:&quot;H&amp;M&quot;,&quot;saleUrl&quot;:&quot;https://www2.hm.com/ru_ru/sale/shopbyproductladies/view-all.html&quot;,&quot;productsTag&quot;:&quot;ul.products-listing.small&quot;,&quot;productItemTag&quot;:&quot;li.product-item&quot;,&quot;siteUrl&quot;:&quot;https://www2.hm.com&quot;,&quot;productLinkTag&quot;:&quot;a.link&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;a.link&quot;,&quot;newPriceTag&quot;:&quot;span.price.sale&quot;,&quot;oldPriceTag&quot;:&quot;span.price.regular&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080/api/sites-management/sites" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="siteData: {&quot;id&quot;:7,&quot;store_name&quot;:&quot;H&amp;M&quot;,&quot;saleUrl&quot;:&quot;https://www2.hm.com/ru_ru/sale/shopbyproductladies/view-all.html&quot;,&quot;productsTag&quot;:&quot;ul.products-listing.small&quot;,&quot;productItemTag&quot;:&quot;li.product-item&quot;,&quot;siteUrl&quot;:&quot;https://www2.hm.com&quot;,&quot;productLinkTag&quot;:&quot;a.link&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;a.link&quot;,&quot;newPriceTag&quot;:&quot;span.price.sale&quot;,&quot;oldPriceTag&quot;:&quot;span.price.regular&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/api/sites-management/sites" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;store_name&quot;:&quot;H&amp;M&quot;,&quot;saleUrl&quot;:&quot;https://www2.hm.com/ru_ru/sale/shopbyproductladies/view-all.html&quot;,&quot;productsTag&quot;:&quot;ul.products-listing.small&quot;,&quot;productItemTag&quot;:&quot;li.product-item&quot;,&quot;siteUrl&quot;:&quot;https://www2.hm.com&quot;,&quot;productLinkTag&quot;:&quot;a.link&quot;,&quot;productLink&quot;:&quot;href&quot;,&quot;productImgTag&quot;:&quot;img&quot;,&quot;productImg&quot;:&quot;data-src&quot;,&quot;productName&quot;:&quot;a.link&quot;,&quot;newPriceTag&quot;:&quot;span.price.sale&quot;,&quot;oldPriceTag&quot;:&quot;span.price.regular&quot;,&quot;hasJS&quot;:false}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -523,9 +1181,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.29">
+    <configuration name="rest-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="2">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_2#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_2#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" index="2">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_2#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" index="3">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="3">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 9.0.29" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="my_project:war exploded">
           <settings>
@@ -598,6 +1274,23 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="HTTP Request.rest-api#1" />
+      <item itemvalue="HTTP Request.rest-api_2#3" />
+      <item itemvalue="HTTP Request.rest-api#2" />
+      <item itemvalue="HTTP Request.rest-api#3" />
+      <item itemvalue="HTTP Request.rest-api_2#1" />
+      <item itemvalue="HTTP Request.rest-api_2#2" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.29" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.rest-api_2#2" />
+        <item itemvalue="HTTP Request.rest-api_2#1" />
+        <item itemvalue="HTTP Request.rest-api#2" />
+        <item itemvalue="HTTP Request.rest-api#3" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -650,17 +1343,28 @@
       <workItem from="1585214954127" duration="599000" />
       <workItem from="1585330079712" duration="3380000" />
       <workItem from="1585574478343" duration="10105000" />
+      <workItem from="1585734298303" duration="4856000" />
+      <workItem from="1585739182530" duration="96528000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36097000" />
+    <option name="totallyTimeSpent" value="137481000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23087248" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2657718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -668,25 +1372,26 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="REST Client" weight="0.4164306" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5184136" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32577905" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4036827" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="PVS-Studio" order="8" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3295129" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3286119" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Version Control" order="16" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -695,6 +1400,43 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23758389" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="REST Client" order="0" weight="0.4164306" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32577905" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.6161473" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Application Servers" order="8" />
+      <window_info anchor="bottom" id="PVS-Studio" order="9" />
+      <window_info anchor="bottom" id="Spring" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3295129" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
+      <window_info anchor="bottom" id="Version Control" order="17" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -781,22 +1523,51 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java</url>
-          <line>25</line>
+          <url>file://$PROJECT_DIR$/src/main/java/project/controllers/MainController.java</url>
+          <line>18</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/src/main/java/project/services/ParseServiceImpl.java</url>
+          <line>66</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/project/repositories/ProductRepositoryJpaImpl.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/project/repositories/ProductRepository.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/project/parse/SiteParser.java</url>
+          <line>63</line>
+          <properties class="project.parse.SiteParser">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>System.out.println(site.getSaleUrls());</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>entityManager.createQuery(&quot;select f from File f&quot;, File.class)</expression-string>
         <language-id>JAVA</language-id>
@@ -805,291 +1576,454 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/verification.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/security/details/UserDetailsImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/security/details/UserDetailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/template/main.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+        <state relative-caret-position="17">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/advices/AfterUploadAdvice.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.2.4.RELEASE/spring-context-support-5.2.4.RELEASE.jar!/org/springframework/ui/freemarker/FreeMarkerTemplateUtils.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/verification.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
+        <state relative-caret-position="-110" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcherServlet-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/MessageContentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/EmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/MessageContentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/url_mail_template.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" selection-start-line="10" selection-end-line="36" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/url.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="4" column="6" selection-end-line="127" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/security/init/SecurityWebApplicationInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/EmailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/aspects/FileAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/AuthServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/VerificationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="30" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/SignInController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/ProfileController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/SignUpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/file_upload.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/profile.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="54" column="94" selection-start-line="54" selection-start-column="94" selection-end-line="54" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/signIn.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="154" selection-start-line="154" selection-end-line="155" />
+        <state relative-caret-position="102">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/template/signUp.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="157" column="90" selection-start-line="157" selection-start-column="90" selection-end-line="157" selection-end-column="90" />
+        <state relative-caret-position="349">
+          <caret line="48" column="74" selection-start-line="48" selection-start-column="74" selection-end-line="48" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/signIn.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="35" column="73" selection-start-line="35" selection-start-column="73" selection-end-line="35" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/url.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/url_mail_template.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/MessageContentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/dto/UserDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/AuthServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        <state relative-caret-position="408">
+          <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/listeners/SpringContextServletContextListener.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/VerificationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <state relative-caret-position="102">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/TokenRepositoryJdbcImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/dto/ResponseProductsDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-518">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/UserRepositoryJdbcImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-756">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/FilesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="32" column="88" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
+        <state relative-caret-position="255">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/FileService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/dto/ResponseSitesDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="153">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/dto/ResponseProductDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/dto/ResponseSiteDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/ProductsRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="22" column="67" lean-forward="true" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/dto/SiteDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJdbcImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" selection-start-line="15" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="128" column="64" selection-start-line="128" selection-start-column="64" selection-end-line="128" selection-end-column="64" />
+        <state relative-caret-position="621">
+          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3646#3647#0" expanded="true" />
-            <element signature="e#3700#3701#0" expanded="true" />
+            <element signature="e#2644#2645#0" expanded="true" />
+            <element signature="e#2672#2673#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/UserRepositoryJdbcImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="145" column="21" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
+        <state relative-caret-position="621">
+          <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="21" />
+          <folding>
+            <element signature="e#3697#3698#0" expanded="true" />
+            <element signature="e#3725#3726#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/models/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/TokenRepositoryJdbcImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        <state relative-caret-position="621">
+          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="21" />
+          <folding>
+            <element signature="e#2950#2951#0" expanded="true" />
+            <element signature="e#2978#2979#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/models/File.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        <state>
+          <caret selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/FileRepositoryJpaImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        <state relative-caret-position="468">
+          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/FileServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/SiteRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        <state relative-caret-position="119">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/models/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/models/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/scheduling/support/DelegatingErrorHandlingRunnable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar!/org/springframework/scheduling/support/ScheduledMethodRunnable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/models/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/models/Site.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/models/Url.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="70" column="42" lean-forward="true" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+          <folding>
+            <element signature="e#1097#1098#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/ProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/ProductRepositoryJpaImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="88" column="25" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
+          <folding>
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#0#23#1" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1051#1052#0" expanded="true" />
+            <element signature="e#0#19#1" expanded="true" />
+            <element signature="e#0#41#1" expanded="true" />
+            <element signature="e#0#47#1" expanded="true" />
+            <element signature="e#0#48#1" expanded="true" />
+            <element signature="e#0#51#1" expanded="true" />
+            <element signature="e#0#58#1" expanded="true" />
+            <element signature="e#0#47#1" expanded="true" />
+            <element signature="e#0#48#1" expanded="true" />
+            <element signature="e#0#42#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/parts/header.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="22" selection-start-line="22" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/SiteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/CrudRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/SiteServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/config/ApplicationContextConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="133" column="58" selection-start-line="133" selection-start-column="58" selection-end-line="133" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/security/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/SitesRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#1684#1685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/http/rest_api.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="13" lean-forward="true" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/repositories/SiteRepositoryJpaImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#0#20#1" expanded="true" />
+            <element signature="e#0#48#1" expanded="true" />
+            <element signature="e#0#407#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/product.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/models/Who.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/controllers/ProductsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="61" column="73" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="61" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/project/services/ParseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

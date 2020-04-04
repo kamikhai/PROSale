@@ -16,7 +16,7 @@ public class SignInController {
     public ModelAndView getView(Authentication authentication) {
         ModelAndView modelAndView = new ModelAndView();
         if (authentication != null){
-            modelAndView.setViewName("redirect:/main");
+            modelAndView.setViewName("redirect:/profile");
         } else {
             modelAndView.setViewName("signIn");
         }

@@ -9,8 +9,6 @@ import org.springframework.web.servlet.ModelAndView;
 import project.models.User;
 import project.services.AuthService;
 
-import javax.servlet.http.HttpSession;
-
 @Controller
 public class SignUpController {
 
@@ -23,7 +21,7 @@ public class SignUpController {
     public ModelAndView getView(Authentication authentication) {
         ModelAndView modelAndView = new ModelAndView();
         if (authentication != null){
-            modelAndView.setViewName("redirect:/main");
+            modelAndView.setViewName("redirect:/profile");
         } else {
             modelAndView.setViewName("signUp");
         }

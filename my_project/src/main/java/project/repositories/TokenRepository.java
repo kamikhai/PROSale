@@ -1,6 +1,5 @@
 package project.repositories;
 
-import project.models.User;
 import project.models.VerificationToken;
 
 import java.util.Optional;

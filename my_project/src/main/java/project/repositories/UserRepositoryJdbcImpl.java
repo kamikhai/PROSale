@@ -12,7 +12,6 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
 
 import java.sql.PreparedStatement;
-import java.sql.Statement;
 import java.util.List;
 import java.util.Optional;
 
@@ -98,5 +97,8 @@ public class UserRepositoryJdbcImpl implements UserRepository {
     }
 
     @Override
-    public void delete(Long id) {}
+    public boolean delete(Long aLong) {
+        return false;
+    }
+
 }

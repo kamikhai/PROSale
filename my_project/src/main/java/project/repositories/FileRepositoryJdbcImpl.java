@@ -70,5 +70,9 @@ public class FileRepositoryJdbcImpl implements FileRepository {
     }
 
     @Override
-    public void delete(Long id) {}
+    public boolean delete(Long aLong) {
+        return false;
+    }
+
+
 }

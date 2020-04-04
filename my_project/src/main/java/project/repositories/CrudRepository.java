@@ -7,5 +7,5 @@ public interface CrudRepository<ID, V> {
     Optional<V> find(ID id);
     List<V> findAll();
     Long save(V entity);
-    void delete(ID id);
+    boolean delete(ID id);
 }
