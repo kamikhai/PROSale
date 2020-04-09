@@ -5,7 +5,7 @@ import freemarker.template.Template;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
-import project.dto.UserDto;
+import project.dto.AuthDto;
 
 import javax.mail.internet.MimeMessage;
 import java.util.HashMap;
@@ -19,12 +19,12 @@ public class MessageContentServiceImpl implements MessageContentService {
 
 
     @Override
-    public String getMailConfirmPage(UserDto userDto, String token, MimeMessage message) {
+    public String getMailConfirmPage(AuthDto authDto, String token, MimeMessage message) {
         try {
             Map<String, Object> model = new HashMap();
-            model.put("email", userDto.getEmail());
+            model.put("email", authDto.getEmail());
             model.put("token", token);
-            model.put("name", userDto.getName());
+            model.put("name", authDto.getName());
             Template template = configuration.getTemplate("mail_template.ftl");
             return FreeMarkerTemplateUtils.processTemplateIntoString(template, model);
         } catch (Exception e) {

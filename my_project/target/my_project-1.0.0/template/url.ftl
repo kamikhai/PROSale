@@ -11,8 +11,8 @@
 
 <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
     <tr>
-        <td align="center" bgcolor="#00b4ef" style="padding: 10px 0 5px 0;">
-            <p style="font-size: 30px"><b>Your image uploaded seccessfully!</b></p>
+        <td align="center" bgcolor="black" style="padding: 10px 0 5px 0;">
+            <p style="font-size: 30px; color: white"><b>Your image uploaded seccessfully!</b></p>
         </td>
     </tr>
     <tr>

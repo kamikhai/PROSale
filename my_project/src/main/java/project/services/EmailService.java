@@ -1,8 +1,8 @@
 package project.services;
 
-import project.dto.UserDto;
+import project.dto.AuthDto;
 
 public interface EmailService {
-    public void sendConfirmation(String token, UserDto userDto);
+    public void sendConfirmation(String token, AuthDto authDto);
     public void sendImageUrl(String email, String fileName);
 }

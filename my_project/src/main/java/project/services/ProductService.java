@@ -21,5 +21,8 @@ public interface ProductService {
 
     List<Product> findAllByWhoAndSort(boolean up, Who who);
 
+
+    List<Product> findAllByWhoAndStoreAndSort(boolean up, Who who, Long store);
+
     List<Product> findAllByWho(Who who);
 }

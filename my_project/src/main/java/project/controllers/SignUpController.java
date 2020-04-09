@@ -17,7 +17,7 @@ public class SignUpController {
 
 
     @PreAuthorize("permitAll()")
-    @RequestMapping(value = "/signUp", method = RequestMethod.GET)
+    @GetMapping("/signUp")
     public ModelAndView getView(Authentication authentication) {
         ModelAndView modelAndView = new ModelAndView();
         if (authentication != null){
@@ -29,7 +29,7 @@ public class SignUpController {
     }
 
     @PreAuthorize("permitAll()")
-    @RequestMapping(value = "/signUp", method = RequestMethod.POST)
+    @PostMapping("/signUp")
     public ModelAndView getCourse(@RequestParam String name, @RequestParam String surname,
                                   @RequestParam String email, @RequestParam String password) {
         Long id = authService.signUp(User.builder()

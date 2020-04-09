@@ -4,10 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import project.models.Product;
 import project.models.Site;
@@ -26,24 +23,29 @@ public class ProductsController {
     SiteService siteService;
 
     @PreAuthorize("permitAll()")
-    @RequestMapping(value = "/products_women", method = RequestMethod.GET)
+    @GetMapping("/products_women")
     public ModelAndView getWomenPage(@RequestParam(required = false) Long store,
                                    @RequestParam(required = false) Integer select){
-        return getProductsPage(store, select, Who.WOMAN).addObject("url","/products_women" );
+        return getProductsPage(store, select, Who.WOMAN).addObject("url","/products_women" )
+                .addObject("who",Who.WOMAN);
+
     }
 
     @PreAuthorize("permitAll()")
-    @RequestMapping(value = "/products_men", method = RequestMethod.GET)
+    @GetMapping("/products_men")
     public ModelAndView getMenPage(@RequestParam(required = false) Long store,
                                    @RequestParam(required = false) Integer select){
-        return getProductsPage(store, select, Who.MAN).addObject("url","/products_men" );
+        return getProductsPage(store, select, Who.MAN).addObject("url","/products_men" )
+                .addObject("who",Who.MAN);
+
     }
 
     @PreAuthorize("permitAll()")
-    @RequestMapping(value = "/products_kids", method = RequestMethod.GET)
+    @GetMapping("/products_kids")
     public ModelAndView getKidsPage(@RequestParam(required = false) Long store,
                                    @RequestParam(required = false) Integer select){
-        return getProductsPage(store, select, Who.KIDS).addObject("url","/products_kids" );
+        return getProductsPage(store, select, Who.KIDS).addObject("url","/products_kids" )
+                .addObject("who",Who.KIDS);
     }
 
 
@@ -64,10 +66,10 @@ public class ProductsController {
         } else {
             products = productService.findAllByWho(who);
         }
-        modelAndView.addObject("products", products);
+//        modelAndView.addObject("products", products);
         modelAndView.addObject("sites", sites);
+        modelAndView.addObject("first", true);
         modelAndView.addObject("empty", "http://localhost:8080/files/empty.jpg");
-        modelAndView.addObject("size", products.size());
         return modelAndView;
     }
 }

@@ -16,7 +16,7 @@ public class VerificationController {
     private TokenService tokenService;
 
     @PreAuthorize("permitAll()")
-    @RequestMapping(value = "/verification", method = RequestMethod.GET)
+    @GetMapping("/verification")
     public ModelAndView checkVerification(@RequestParam String t, HttpSession session){
         String token = t;
         ModelAndView modelAndView = new ModelAndView();

@@ -77,10 +77,10 @@ public class ProductRepositoryJpaImpl implements ProductRepository {
     @Override
     public List<Product> findAllByWhoAndSort(boolean up, Who who) {
         if (up) {
-            return entityManager.createQuery("SELECT p FROM Product p where p.who = : who order by p.newPrice asc")
+            return entityManager.createQuery("SELECT p FROM Product p where p.who = : who order by cast(p.newPrice as int) asc")
                     .setParameter("who", who).getResultList();
         } else {
-            return entityManager.createQuery("SELECT p FROM Product p where p.who = : who order by p.newPrice desc")
+            return entityManager.createQuery("SELECT p FROM Product p where p.who = : who order by cast(p.newPrice as int) desc")
                     .setParameter("who", who).getResultList();
         }
     }
@@ -88,6 +88,17 @@ public class ProductRepositoryJpaImpl implements ProductRepository {
     @Override
     public List<Product> findAllByWho(Who who) {
         return entityManager.createQuery("SELECT p FROM Product p where p.who = :who").setParameter("who", who).getResultList();
+    }
+
+    @Override
+    public List<Product> findAllByWhoAndStoreAndSort(boolean up, Who who, Long store) {
+        if (up) {
+            return entityManager.createQuery("SELECT p FROM Product p where p.who = : who and p.site.id = :s order by cast(p.newPrice as int) asc")
+                    .setParameter("who", who).setParameter("s", store).getResultList();
+        } else {
+            return entityManager.createQuery("SELECT p FROM Product p where p.who = : who and p.site.id = :s order by cast(p.newPrice as int) desc")
+                    .setParameter("who", who).setParameter("s", store).getResultList();
+        }
     }
 
     private int calculateOffset(int page, int size) {

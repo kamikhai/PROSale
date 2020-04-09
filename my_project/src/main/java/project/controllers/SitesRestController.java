@@ -1,6 +1,7 @@
 package project.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import project.dto.ResponseProductDto;
 import project.dto.ResponseSiteDto;
@@ -11,6 +12,7 @@ import project.services.SiteService;
 
 @RestController
 @RequestMapping("/api/sites-management")
+@PreAuthorize("hasAuthority('ADMIN')")
 public class SitesRestController {
 
     @Autowired

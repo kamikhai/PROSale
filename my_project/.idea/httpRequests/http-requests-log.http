@@ -1,539 +1,493 @@
-DELETE http://localhost:8080/api/sites-management/sites/6
-Accept: */*
-Cache-Control: no-cache
+POST http://localhost:8080/api/sites-management/sites
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
 
-<> 2020-04-04T021106.200.json
+{
+  "store_name": "HM",
+  "productsTag": "ul.products-listing.small"
+}
 
-###
-
-DELETE http://localhost:8080/api/sites-management/sites/6
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-04-04T015452.200.json
-
-###
-
-DELETE http://localhost:8080/api/sites-management/sites/1
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-04-04T015417.200.json
+<> 2020-04-09T070319.200.json
 
 ###
 
 POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
 Content-Type: application/json
 
 {
-  "data": {
-    "store_name": "HM"
-  }
+  "store_name": "HM",
+  "productsTag": "ul.products-listing.small"
 }
-
-<> 2020-04-04T015411.200.json
 
 ###
 
 POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
 
 {
-  "data": {
-    "store_name": "HM"
-  }
+  "store_name": "HM",
+  "productsTag": "ul.products-listing.small"
 }
 
-<> 2020-04-04T015407.500.html
+<> 2020-04-09T070030.200.json
 
 ###
 
 POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
 
 {
-  "data": {
-    "store_name": "HM"
-  }
+  "store_name": "HM",
+  "productsTag": "ul.products-listing.small"
 }
 
-<> 2020-04-04T015359.500.html
+<> 2020-04-09T065537.200.json
 
 ###
 
 POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
 
 {
-  "data": {
-    "id" : 10,
-    "store_name": "HM"
-  }
+  "store_name": "HM",
+  "productsTag": "ul.products-listing.small"
 }
-
-<> 2020-04-04T015325.500.html
 
 ###
 
 POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
 
 {
-  "data": {
-    "store_name": "HM"
-  }
+  "store_name": "HM",
+  "productsTag": "ul.products-listing.small"
 }
-
-<> 2020-04-04T015237.500.html
-
-###
-
-DELETE http://localhost:8080/api/sites-management/sites/1
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-04-04T015037.200.json
-
-###
-
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{
-  "data": {
-    "store_name": "HM"
-  }
-}
-
-<> 2020-04-04T014941.200.json
-
-###
-
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
-
-{
-  "data": {
-    "store_name": "HM",
-    "productsTag": "ul.products-listing.small",
-    "productItemTag": "li.product-item",
-    "siteUrl": "https://www2.hm.com",
-    "productLinkTag": "a.link",
-    "productLink": "href",
-    "productImgTag": "img",
-    "productImg": "data-src",
-    "productName": "a.link",
-    "newPriceTag": "span.price.sale",
-    "oldPriceTag": "span.price.regular",
-    "hasJS": false
-  }
-}
-
-<> 2020-04-04T014920.415.html
 
 ###
 
 GET http://localhost:8080/api/sites-management/sites/2
-Accept: */*
-Cache-Control: no-cache
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
 
-<> 2020-04-04T014806.200.json
+<> 2020-04-09T032033.200.json
+
+###
+
+GET http://localhost:8080/api/sites-management/sites/2
 
 ###
 
 POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
+
+{
+  "store_name": "HM",
+  "productsTag": "ul.products-listing.small"
+}
+
+<> 2020-04-09T030310.200.json
+
+###
+
+POST http://localhost:8080/api/signIn
 Content-Type: application/json
 
-{"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
 
-<> 2020-04-03T094938.200.json
+<> 2020-04-09T030029.200.json
 
 ###
 
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+POST http://localhost:8080/api/signIn
 Content-Type: application/json
 
-{"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
 
-<> 2020-04-03T094452.500.html
-
-###
-
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-X-CSRF-TOKEN: B0B9CCE1B8F4B0771BA32895E87CFA6D
-
-{"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
-
-<> 2020-04-03T094336.403.html
+<> 2020-04-09T025921.200.json
 
 ###
 
-POST http://localhost:8080/api/sites-management/sites?${_csrf.parameterName}=${_csrf.token}
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-X-CSRF-TOKEN: B0B9CCE1B8F4B0771BA32895E87CFA6D
+GET http://localhost:8080/api/products-management/products
 
-{"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
-
-<> 2020-04-03T094310.403.html
+<> 2020-04-09T025910.200.json
 
 ###
 
-POST http://localhost:8080/api/sites-management/sites?${_csrf.parameterName}=${_csrf.token}
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-X-CSRF-TOKEN: CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz
+GET http://localhost:8080/api/products-management/products
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
 
-{"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
-
-<> 2020-04-03T094102.403.html
+<> 2020-04-09T025902.500.html
 
 ###
 
-POST http://localhost:8080/api/sites-management/sites?${_csrf.parameterName}=${_csrf.token}
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-X-CSRF-TOKEN: AAAAAAAAAAAAAAAAAAAA
+GET http://localhost:8080/api/products-management/products/WOMAN?sort=3
 
-{"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
-
-<> 2020-04-03T093821.403.html
-
-###
-
-POST http://localhost:8080/api/sites-management/sites?${_csrf.parameterName}=${_csrf.token}
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
-
-<> 2020-04-03T093507.403.html
-
-###
-
-POST http://localhost:8080/api/sites-management/sites?${_csrf.parameterName}=${_csrf.token}
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
-
-<> 2020-04-03T093407.200.json
-
-###
-
-DELETE http://localhost:8080/api/sites-management/sites/6
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-04-03T092151.403.html
-
-###
-
-PUT http://localhost:8080/api/sites-management/sites/7
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"store_name":"Blabl","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
-
-<> 2020-04-03T092140.403.html
-
-###
-
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
-
-<> 2020-04-03T091024.200.json
-
-###
-
-GET http://localhost:8080/api/sites-management/sites?page=1&size=4&sort=id
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-04-03T090838.200.json
+<> 2020-04-09T025850.200.json
 
 ###
 
 GET http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
 
-<> 2020-04-03T090832.200.json
+<> 2020-04-09T025840.500.html
 
 ###
 
-PUT http://localhost:8080/api/sites-management/sites/7
-Accept: */*
-Cache-Control: no-cache
+POST http://localhost:8080/api/sites-management/sites
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
+
+{
+  "store_name": "HM",
+  "productsTag": "ul.products-listing.small"
+}
+
+<> 2020-04-09T025829.500.html
+
+###
+
+GET http://localhost:8080/api/sites-management/sites/2
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
+
+###
+
+POST http://localhost:8080/api/sites-management/sites
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
+
+{
+  "store_name": "HM",
+  "productsTag": "ul.products-listing.small"
+}
+
+<> 2020-04-09T025715.500.html
+
+###
+
+POST http://localhost:8080/api/signIn
 Content-Type: application/json
 
-{"store_name":"Blabla","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
-
-<> 2020-04-03T083908.200.txt
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
 
 ###
 
-PUT http://localhost:8080/api/sites-management/sites/7
-Accept: */*
-Cache-Control: no-cache
+GET http://localhost:8080/api/products-management/products/WOMAN?sort=3
+
+<> 2020-04-08T111436.200.json
+
+###
+
+GET http://localhost:8080/api/products-management/products/WOMAN?sort=2
+
+<> 2020-04-08T111329.200.json
+
+###
+
+GET http://localhost:8080/api/products-management/products/MAN?sort=2
+
+<> 2020-04-08T111247.200.json
+
+###
+
+GET http://localhost:8080/api/products-management/products/WOMAN
+
+<> 2020-04-08T111217.200.json
+
+###
+
+POST http://localhost:8080/api/signIn
 Content-Type: application/json
 
-{"store_name":"Blabla","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
 
-<> 2020-04-03T083723.500.html
+<> 2020-04-08T100954.200.json
 
 ###
 
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+GET http://localhost:8080/api/products-management/products
+
+<> 2020-04-08T085022.200.json
+
+###
+
+POST http://localhost:8080/api/signIn
 Content-Type: application/json
 
-{"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
 
-<> 2020-04-03T080640.200.json
-
-###
-
-DELETE http://localhost:8080/api/sites-management/sites/6
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-04-03T080625.200.json
+<> 2020-04-08T084633.200.json
 
 ###
 
-DELETE http://localhost:8080/api/sites-management/sites/6
-Accept: */*
-Cache-Control: no-cache
+GET http://localhost:8080/api/products-management/products
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
 
-<> 2020-04-03T080513.500.html
-
-###
-
-DELETE http://localhost:8080/api/sites-management/sites/6
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-04-03T080424.500.html
+<> 2020-04-08T083602.200.json
 
 ###
 
-DELETE http://localhost:8080/api/sites-management/sites/6
-Accept: */*
-Cache-Control: no-cache
+GET http://localhost:8080/api/products-management/products
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
 
-<> 2020-04-03T080118.500.html
-
-###
-
-DELETE http://localhost:8080/api/sites-management/sites/6
-Accept: */*
-Cache-Control: no-cache
-
-<> 2020-04-03T080007.200.json
+<> 2020-04-08T083455.200.json
 
 ###
 
-DELETE http://localhost:8080/api/sites-management/sites/6
-Accept: */*
-Cache-Control: no-cache
+GET http://localhost:8080/api/products-management/products
 
-<> 2020-04-03T075255.405.html
+<> 2020-04-08T083209.403.html
 
 ###
 
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+POST http://localhost:8080/api/signIn
 Content-Type: application/json
 
-{"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
 
-<> 2020-04-03T072804.200.json
+<> 2020-04-08T010515.200.json
 
 ###
 
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+POST http://localhost:8080/api/signIn
 Content-Type: application/json
 
-{"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
 
-<> 2020-04-03T072650.200.json
-
-###
-
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-{"id": 3,"store_name":"Reserve","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woma","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
-
-<> 2020-04-03T072633.400.html
+<> 2020-04-08T122119.200.json
 
 ###
 
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+POST http://localhost:8080/api/signIn
 Content-Type: application/json
 
-{"store_name":"Reserved","saleUrl":"https://www.reserved.com/ru/ru/sale2-ru/woman","productsTag":"section#categoryProducts.es-products","productItemTag":"article.es-product","siteUrl":"","productLinkTag":"a.es-product-photo","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"figcaption.es-product-name a","newPriceTag":"p.es-discount-price span","oldPriceTag":"p.es-regular-price span","hasJS":false}
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
 
-<> 2020-04-03T072145.200.json
+<> 2020-04-08T122038.403.html
 
 ###
 
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+POST http://localhost:8080/api/signIn
 Content-Type: application/json
 
-{"store_name":"Reserved"}
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
 
-<> 2020-04-03T071647.200.txt
+<> 2020-04-08T121951.403.html
+
+###
+
+POST http://localhost:8080/api/signIn
+Content-Type: application/json
+
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
+
+<> 2020-04-08T121940.403.html
+
+###
+
+POST http://localhost:8080/api/signIn
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
+
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
+
+<> 2020-04-08T121835.200.json
+
+###
+
+POST http://localhost:8080/api/signIn
+Content-Type: application/json
+
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
+
+<> 2020-04-08T121823.403.html
 
 ###
 
 POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
 
-{"store_name":"Reserved"}
+{
+  "store_name": "HM",
+  "productsTag": "ul.products-listing.small"
+}
 
-<> 2020-04-03T071607.415.html
+<> 2020-04-08T121803.200.json
+
+###
+
+PUT http://localhost:8080/api/sites-management/sites/13
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
+
+{
+  "store_name": "H&M",
+  "productsTag": "ul.products-listing.small",
+  "productItemTag": "li.product-item",
+  "siteUrl": "https://www2.hm.com",
+  "productLinkTag": "a.link",
+  "productLink": "href",
+  "productImgTag": "img",
+  "productImg": "data-src",
+  "productName": "a.link",
+  "newPriceTag": "span.price.sale",
+  "oldPriceTag": "span.price.regular",
+  "hasJS": false
+}
+
+<> 2020-04-08T121749.200.txt
 
 ###
 
 POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
 
-{"store_name":"Reserved"}
+{
+  "store_name": "HM",
+  "productsTag": "ul.products-listing.small"
+}
 
-<> 2020-04-03T063555.415.html
-
-###
-
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
-
-{"store_name":"Reserved"}
-
-<> 2020-04-03T063444.415.html
+<> 2020-04-08T121725.200.json
 
 ###
 
 POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
 
-{"store_name":"Reserved"}
+{
+  "store_name": "HM"
+}
 
-<> 2020-04-03T063216.415.html
-
-###
-
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
-
-{"store_name":"H&M","saleUrl":"https://www2.hm.com/ru_ru/sale/shopbyproductladies/view-all.html","productsTag":"ul.products-listing.small","productItemTag":"li.product-item","siteUrl":"https://www2.hm.com","productLinkTag":"a.link","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"a.link","newPriceTag":"span.price.sale","oldPriceTag":"span.price.regular","hasJS":false}
-
-<> 2020-04-03T062744.415.html
+<> 2020-04-08T121350.500.html
 
 ###
 
 POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
 
-{"id":7,"store_name":"H&M","saleUrl":"https://www2.hm.com/ru_ru/sale/shopbyproductladies/view-all.html","productsTag":"ul.products-listing.small","productItemTag":"li.product-item","siteUrl":"https://www2.hm.com","productLinkTag":"a.link","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"a.link","newPriceTag":"span.price.sale","oldPriceTag":"span.price.regular","hasJS":false}
+{
+  "store_name": "HM"
+}
 
-<> 2020-04-03T062710.415.html
-
-###
-
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
-
-siteData: {"id":7,"store_name":"H&M","saleUrl":"https://www2.hm.com/ru_ru/sale/shopbyproductladies/view-all.html","productsTag":"ul.products-listing.small","productItemTag":"li.product-item","siteUrl":"https://www2.hm.com","productLinkTag":"a.link","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"a.link","newPriceTag":"span.price.sale","oldPriceTag":"span.price.regular","hasJS":false}
-
-<> 2020-04-03T062657.415.html
+<> 2020-04-08T121307.500.html
 
 ###
 
 POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
 
-siteData: {"id":7,"store_name":"H&M","saleUrl":"https://www2.hm.com/ru_ru/sale/shopbyproductladies/view-all.html","productsTag":"ul.products-listing.small","productItemTag":"li.product-item","siteUrl":"https://www2.hm.com","productLinkTag":"a.link","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"a.link","newPriceTag":"span.price.sale","oldPriceTag":"span.price.regular","hasJS":false}
+{
+  "store_name": "HM"
+}
 
-<> 2020-04-03T062626.403.html
-
-###
-
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
-
-siteData: {"id":7,"store_name":"H&M","saleUrl":"https://www2.hm.com/ru_ru/sale/shopbyproductladies/view-all.html","productsTag":"ul.products-listing.small","productItemTag":"li.product-item","siteUrl":"https://www2.hm.com","productLinkTag":"a.link","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"a.link","newPriceTag":"span.price.sale","oldPriceTag":"span.price.regular","hasJS":false}
-
-<> 2020-04-03T061602.403.html
+<> 2020-04-08T121049.200.json
 
 ###
 
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+GET http://localhost:8080/api/sites-management/sites/2
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
 
-{"id":7,"store_name":"H&M","saleUrl":"https://www2.hm.com/ru_ru/sale/shopbyproductladies/view-all.html","productsTag":"ul.products-listing.small","productItemTag":"li.product-item","siteUrl":"https://www2.hm.com","productLinkTag":"a.link","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"a.link","newPriceTag":"span.price.sale","oldPriceTag":"span.price.regular","hasJS":false}
-
-<> 2020-04-03T061512.403.html
+<> 2020-04-08T121043.200.json
 
 ###
 
-POST http://localhost:8080/api/sites-management/sites
-Accept: */*
-Cache-Control: no-cache
+GET http://localhost:8080/api/sites-management/sites/2
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
 
-{"store_name":"H&M","saleUrl":"https://www2.hm.com/ru_ru/sale/shopbyproductladies/view-all.html","productsTag":"ul.products-listing.small","productItemTag":"li.product-item","siteUrl":"https://www2.hm.com","productLinkTag":"a.link","productLink":"href","productImgTag":"img","productImg":"data-src","productName":"a.link","newPriceTag":"span.price.sale","oldPriceTag":"span.price.regular","hasJS":false}
+###
 
-<> 2020-04-03T061400.403.html
+GET http://localhost:8080/api/sites-management/sites/2
+
+###
+
+GET http://localhost:8080/api/sites-management/sites/2
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
+
+<> 2020-04-08T120850.200.json
+
+###
+
+GET http://localhost:8080/api/sites-management/sites/2
+
+<> 2020-04-08T120841.403.html
+
+###
+
+POST http://localhost:8080/api/signIn
+Content-Type: application/json
+
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
+
+<> 2020-04-08T120749.403.html
+
+###
+
+POST http://localhost:8080/api/signIn
+Content-Type: application/json
+
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
+
+<> 2020-04-08T120610.403.html
+
+###
+
+POST http://localhost:8080/signIn
+Content-Type: application/json
+
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
 
 ###
 

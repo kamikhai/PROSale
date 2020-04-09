@@ -1,9 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta name="_csrf" content="${_csrf.token}"/>
-    <!-- default header name is X-CSRF-TOKEN -->
-    <meta name="_csrf_header" content="${_csrf.headerName}"/>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -14,19 +11,13 @@
             crossorigin="anonymous"></script>
     <title>Document</title>
     <script>
-        var token = $("meta[name='_csrf']").attr("content");
-        var header = $("meta[name='_csrf_header']").attr("content");
 
 
         function sendFile() {
             var form = $("#post_form")[0];
             var data = new FormData(form);
-            var token = $("meta[name='_csrf']").attr("content");
-            var header = $("meta[name='_csrf_header']").attr("content");
             $.ajax({
                 type: "POST",
-                beforeSend: function(request) {
-                    request.setRequestHeader(header, token);},
                 enctype: 'multipart/form-data',
                 url: "/files",
                 data: data,

@@ -67,6 +67,11 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public List<Product> findAllByWhoAndStoreAndSort(boolean up, Who who, Long store) {
+        return productRepository.findAllByWhoAndStoreAndSort(up, who, store);
+    }
+
+    @Override
     public List<Product> findAllByWho(Who who) {
         return productRepository.findAllByWho(who);
     }

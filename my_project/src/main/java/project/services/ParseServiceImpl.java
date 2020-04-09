@@ -22,10 +22,9 @@ public class ParseServiceImpl implements ParseService {
     @Autowired
     private ProductService productService;
 
-    @Scheduled(fixedDelay = 3600000)
+//    @Scheduled(fixedDelay = 3600000)
     @Override
     public void parse() {
-        System.out.println("Я ТУТ");
         productService.truncateTable();
         System.setProperty("webdriver.chrome.driver", "D:\\Driver\\chromedriver.exe");
         ChromeDriver driver = new ChromeDriver();

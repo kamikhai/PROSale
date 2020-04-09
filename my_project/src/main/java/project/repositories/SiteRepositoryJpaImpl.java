@@ -57,12 +57,11 @@ public class SiteRepositoryJpaImpl implements SiteRepository {
     public int update(Long id, Site site) {
         Optional<Site> siteCandidate = find(id);
         if (siteCandidate.isPresent()){
-            return entityManager.createQuery("update Site s set s.store_name = :store_name, s.saleUrls = :saleUrls, s.productsTag = :productsTag, " +
+            return entityManager.createQuery("update Site s set s.store_name = :store_name, s.productsTag = :productsTag, " +
                     "s.productItemTag = :productItemTag, s.siteUrl = :siteUrl, s.productLinkTag = :productLinkTag, s.productLink = :productLink," +
                     "s.productImgTag = :productImgTag, s.productImg = :productImg, s.productName = :productName, s.newPriceTag = :newPriceTag," +
                     "s.oldPriceTag = :oldPriceTag, s.hasJS = :hasJS where s.id = :id")
                     .setParameter("store_name", site.getStore_name())
-                    .setParameter("saleUrls", site.getSaleUrls())
                     .setParameter("productsTag", site.getProductsTag())
                     .setParameter("productItemTag", site.getProductItemTag())
                     .setParameter("siteUrl", site.getSiteUrl())

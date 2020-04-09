@@ -1,0 +1,62 @@
+GET http://localhost:8080/api/sites-management/sites/2
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
+
+
+###
+
+GET http://localhost:8080/api/sites-management/sites
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
+
+
+###
+
+POST http://localhost:8080/api/sites-management/sites
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
+
+{
+  "store_name": "HM"
+}
+
+
+
+###
+
+DELETE http://localhost:8080/api/sites-management/sites/10
+Accept: */*
+Cache-Control: no-cache
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
+
+
+
+###
+PUT http://localhost:8080/api/sites-management/sites/10
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
+
+{
+  "store_name": "H&M",
+  "productsTag": "ul.products-listing.small",
+  "productItemTag": "li.product-item",
+  "siteUrl": "https://www2.hm.com",
+  "productLinkTag": "a.link",
+  "productLink": "href",
+  "productImgTag": "img",
+  "productImg": "data-src",
+  "productName": "a.link",
+  "newPriceTag": "span.price.sale",
+  "oldPriceTag": "span.price.regular",
+  "hasJS": false
+}
+
+###
+
+POST http://localhost:8080/signIn
+Content-Type: application/json
+
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
+
+###

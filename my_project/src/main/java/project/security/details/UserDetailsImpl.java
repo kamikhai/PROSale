@@ -1,6 +1,7 @@
 package project.security.details;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -13,6 +14,7 @@ import java.util.Collections;
 
 @AllArgsConstructor
 @Data
+@Builder
 public class UserDetailsImpl implements UserDetails {
     private User user;
 

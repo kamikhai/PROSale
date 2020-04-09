@@ -1,170 +1,59 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Вход</title>
-    <style>
-        body{background:#00b4ef}
-
-
-        /* Form Style */
-        .form-horizontal{
-            background: #fff;
-            padding-bottom: 40px;
-            border-radius: 15px;
-            text-align: center;
-        }
-        .form-horizontal .heading{
-            display: block;
-            font-size: 35px;
-            font-weight: 700;
-            padding: 35px 0;
-            border-bottom: 1px solid #f0f0f0;
-            margin-bottom: 30px;
-        }
-        .form-horizontal .form-group{
-            padding: 0 40px;
-            margin: 0 0 25px 0;
-            position: relative;
-        }
-        .form-horizontal .form-control{
-            background: #f0f0f0;
-            border: none;
-            border-radius: 20px;
-            box-shadow: none;
-            padding: 0 20px 0 45px;
-            height: 40px;
-            transition: all 0.3s ease 0s;
-        }
-        .form-horizontal .form-control:focus{
-            background: #e0e0e0;
-            box-shadow: none;
-            outline: 0 none;
-        }
-        .form-horizontal .form-group i{
-            position: absolute;
-            top: 12px;
-            left: 60px;
-            font-size: 17px;
-            color: #c8c8c8;
-            transition : all 0.5s ease 0s;
-        }
-        .form-horizontal .form-control:focus + i{
-            color: #00b4ef;
-        }
-        .form-horizontal .fa-question-circle{
-            display: inline-block;
-            position: absolute;
-            top: 12px;
-            right: 60px;
-            font-size: 20px;
-            color: #808080;
-            transition: all 0.5s ease 0s;
-        }
-        .form-horizontal .fa-question-circle:hover{
-            color: #000;
-        }
-        .form-horizontal .main-checkbox{
-            float: left;
-            width: 20px;
-            height: 20px;
-            background: #11a3fc;
-            border-radius: 50%;
-            position: relative;
-            margin: 5px 0 0 5px;
-            border: 1px solid #11a3fc;
-        }
-        .form-horizontal .main-checkbox label{
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            cursor: pointer;
-        }
-        .form-horizontal .main-checkbox label:after{
-            content: "";
-            width: 10px;
-            height: 5px;
-            position: absolute;
-            top: 5px;
-            left: 4px;
-            border: 3px solid #fff;
-            border-top: none;
-            border-right: none;
-            background: transparent;
-            opacity: 0;
-            -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-        }
-        .form-horizontal .main-checkbox input[type=checkbox]{
-            visibility: hidden;
-        }
-        .form-horizontal .main-checkbox input[type=checkbox]:checked + label:after{
-            opacity: 1;
-        }
-        .form-horizontal .text{
-            float: left;
-            margin-left: 7px;
-            line-height: 20px;
-            padding-top: 5px;
-            text-transform: capitalize;
-        }
-        .form-horizontal .btn{
-            float: right;
-            font-size: 14px;
-            color: #fff;
-            background: #00b4ef;
-            border-radius: 30px;
-            padding: 10px 25px;
-            border: none;
-            text-transform: capitalize;
-            transition: all 0.5s ease 0s;
-        }
-        @media only screen and (max-width: 479px){
-            .form-horizontal .form-group{
-                padding: 0 25px;
-            }
-            .form-horizontal .form-group i{
-                left: 45px;
-            }
-            .form-horizontal .btn{
-                padding: 10px 20px;
-            }
-        }
-    </style>
-
-</head>
-<body>
-<link rel="stylesheet" href="/assets/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-offset-3 col-md-6" style="margin-top: 110px">
-            <form class="form-horizontal" method="post" action="/signIn">
-                <span class="heading">ВХОД</span>
-                <div class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="E-mail">
-                    <i class="fa fa-envelope"></i>
+<#import "parts/header.ftl" as h>
+<@h.header title="Вход">
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div class="breadcumb_area bg-img"
+         style="background-image: url(https://sun9-21.userapi.com/c205620/v205620545/cb8bc/Fn_crZrrCh0.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="page-title text-center">
+                        <h2>Вход</h2>
+                    </div>
                 </div>
-                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-                <div class="form-group help">
-                    <input type="password" class="form-control" name="password" placeholder="Password">
-                    <i class="fa fa-lock"></i>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="btn btn-default">ВОЙТИ</button>
-                </div>
-            </form>
-            <div style="text-align: center"><a href="/signUp">Нет аккаунта? Зарегистрируйтесь!</a>
             </div>
         </div>
     </div>
-</div>
-</body>
-</html>
+    <!-- ##### Breadcumb Area End ##### -->
+
+    <!-- ##### Checkout Area Start ##### -->
+    <div class="checkout_area section-padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form class="form-horizontal" id="myform">
+                        <div class="order-details-confirmation" style="text-align: center;">
+
+                            <div class="col-12 mb-4">
+                                <label for="email_address">Email адрес <span>*</span></label>
+                                <input type="email" class="form-control" id="email_address" value="" name="email">
+                            </div>
+                            <div class="col-12 mb-4">
+                                <label for="password">Пароль <span>*</span></label>
+                                <input type="password" class="form-control" id="password" value="" name="password">
+                            </div>
+
+                            <button type="button" class="btn essence-btn" onclick="signIn()">Войти</button> </br></br>
+                            <a href="/signUp">Еще не с нами? Зарегистрийруйтесь!</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Checkout Area End ##### -->
+<script>
+    function signIn() {
+        var email = document.getElementById("email_address").value;
+        var password = document.getElementById("password").value;
+
+        const toSend = {
+            email: email,
+            password: password
+        }
+        var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
+        xmlhttp.open("POST", "/signIn");
+        xmlhttp.setRequestHeader("Content-Type", "application/json");
+        xmlhttp.send(JSON.stringify(toSend));
+    }
+</script>
+</@h.header>

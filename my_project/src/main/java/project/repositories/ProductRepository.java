@@ -17,7 +17,9 @@ public interface ProductRepository extends CrudRepository<Long, Product> {
 
     List<Product> findAllByStoreAndWho(Long store, Who i);
 
-    List<Product> findAllByWhoAndSort(boolean up, Who who);
+    List findAllByWhoAndSort(boolean up, Who who);
 
     List<Product> findAllByWho(Who who);
+
+    List<Product> findAllByWhoAndStoreAndSort(boolean up, Who who, Long store);
 }

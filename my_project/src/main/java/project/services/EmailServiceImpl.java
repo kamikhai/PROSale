@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
-import project.dto.UserDto;
+import project.dto.AuthDto;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
@@ -18,13 +18,13 @@ public class EmailServiceImpl implements EmailService {
     private MessageContentService messageContentService;
 
     @Override
-    public void sendConfirmation(String token, UserDto userDto) {
+    public void sendConfirmation(String token, AuthDto authDto) {
         MimeMessage message = emailSender.createMimeMessage();
         try {
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
-            String text = messageContentService.getMailConfirmPage(userDto, token, message);
+            String text = messageContentService.getMailConfirmPage(authDto, token, message);
             helper.setText(text, true);
-            helper.addTo(userDto.getEmail());
+            helper.addTo(authDto.getEmail());
             helper.setSubject("Email confirmation");
         } catch (MessagingException e) {
             throw new IllegalStateException();

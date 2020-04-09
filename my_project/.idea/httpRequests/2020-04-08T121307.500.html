@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+<head><title>HTTP Status 500 – Internal Server Error</title>
+    <style type="text/css">body {
+        font-family: Tahoma, Arial, sans-serif;
+    }
+
+    h1, h2, h3, b {
+        color: white;
+        background-color: #525D76;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
+        color: black;
+    }
+
+    .line {
+        height: 1px;
+        background-color: #525D76;
+        border: none;
+    }</style>
+</head>
+<body><h1>HTTP Status 500 – Internal Server Error</h1>
+<hr class="line"/>
+<p><b>Type</b> Exception Report</p>
+<p><b>Message</b> Servlet.init() for servlet [dispatcherServlet] threw exception</p>
+<p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p>
+<p><b>Exception</b></p>
+<pre>javax.servlet.ServletException: Servlet.init() for servlet [dispatcherServlet] threw exception
+	org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	java.lang.Thread.run(Thread.java:748)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &#39;parseServiceImpl&#39;: Unsatisfied dependency expressed through field &#39;siteService&#39;; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named &#39;siteServiceImpl&#39; is expected to be of type &#39;project.services.SiteServiceImpl&#39; but was actually of type &#39;com.sun.proxy.$Proxy752&#39;
+	org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	java.lang.Thread.run(Thread.java:748)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named &#39;siteServiceImpl&#39; is expected to be of type &#39;project.services.SiteServiceImpl&#39; but was actually of type &#39;com.sun.proxy.$Proxy752&#39;
+	org.springframework.beans.factory.support.DefaultListableBeanFactory.checkBeanNotOfRequiredType(DefaultListableBeanFactory.java:1713)
+	org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1691)
+	org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1253)
+	org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
+	org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
+	org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
+	org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
+	org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
+	org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
+	javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	java.lang.Thread.run(Thread.java:748)
+</pre>
+<p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p>
+<hr class="line"/>
+<h3>Apache Tomcat/9.0.29</h3></body>
+</html>
