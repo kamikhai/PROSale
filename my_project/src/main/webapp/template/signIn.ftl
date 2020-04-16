@@ -65,7 +65,7 @@
 
                         <button type="submit" class="btn essence-btn">Войти</button>
                         </br></br>
-                        <a href="/signUp">Еще не с нами? Зарегистрийруйтесь!</a>
+                        <a href="/registration">Еще не с нами? Зарегистрийруйтесь!</a>
                     </div>
                 </form>
             </div>

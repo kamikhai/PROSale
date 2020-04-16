@@ -68,3 +68,15 @@ Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFp
 GET http://localhost:8080/api/products-management/products/WOMAN?sort=3
 
 ###
+POST http://localhost:8080/api/messages
+Content-Type: application/json
+
+{
+  "pageId": "8388-83264-55",
+  "text": "qwerty007"
+}
+
+###
+GET http://localhost:8080/api/messages?start=1&userId=101
+
+###

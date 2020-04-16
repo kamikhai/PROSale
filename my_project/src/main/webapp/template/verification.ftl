@@ -14,7 +14,7 @@
 
 <div style="text-align: center">
     <h1>${answer}</h1>
-    <a class="btn essence-btn" href="/signIn">Войти</a>
+    <a class="btn essence-btn" href="/login">Войти</a>
 </div>
 </body>
 </html>

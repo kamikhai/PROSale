@@ -33,7 +33,7 @@
 
 
             <div class="col-md-6 offset-md-3">
-                <form class="form-horizontal" method="post" action="/signUp">
+                <form class="form-horizontal" method="post" action="/registration">
 
                     <div class="order-details-confirmation" style="text-align: center;">
                         <div class="col-md-12 mb-4">
@@ -59,7 +59,7 @@
                         <button type="submit" class="btn essence-btn" >Регистрация
                         </button>
                         </br></br>
-                        <a href="/signIn">Уже есть аккаунт? Войдите!</a>
+                        <a href="/login">Уже есть аккаунт? Войдите!</a>
                     </div>
                 </form>
             </div>

@@ -13,18 +13,15 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.security.authentication.AnonymousAuthenticationProvider;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
-import org.springframework.security.web.authentication.AnonymousAuthenticationFilter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
+import project.executor.ExecutorServiceImpl;
 import project.services.ParseService;
 
 import javax.persistence.EntityManagerFactory;
@@ -157,5 +154,9 @@ public class ApplicationContextConfig {
 //    public AnonymousAuthenticationProvider anonymousAuthenticationProvider(){
 //        return new AnonymousAuthenticationProvider("anonymousKey");
 //    }
+    @Bean
+    public ExecutorServiceImpl getExecutorService(){
+        return new ExecutorServiceImpl(30);
+    }
 
 }

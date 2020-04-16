@@ -35,7 +35,7 @@ public class FilesController {
     }
 
 
-    @PreAuthorize("isAuthenticated()")
+    @PreAuthorize("permitAll()")
     @GetMapping("/storage")
     public String getStoragePage() {
         return "file_upload";

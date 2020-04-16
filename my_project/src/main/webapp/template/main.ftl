@@ -26,7 +26,6 @@
     </div>
 </div>
 <!-- ##### Breadcumb Area End ##### -->
-
 <!-- ##### Blog Wrapper Area Start ##### -->
 <div class="blog-wrapper section-padding-80">
     <div class="container">

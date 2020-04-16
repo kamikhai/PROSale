@@ -2,6 +2,8 @@ package project.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -26,6 +28,8 @@ public class ProductsController {
     @GetMapping("/products_women")
     public ModelAndView getWomenPage(@RequestParam(required = false) Long store,
                                    @RequestParam(required = false) Integer select){
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        System.out.println(authentication);
         return getProductsPage(store, select, Who.WOMAN).addObject("url","/products_women" )
                 .addObject("who",Who.WOMAN);
 

@@ -1,3 +1,54 @@
+GET http://localhost:8080/api/messages?start=1&userId=101
+
+<> 2020-04-12T031327.200.json
+
+###
+
+GET http://localhost:8080/api/messages?start=1&userId=101
+
+<> 2020-04-12T031133.500.html
+
+###
+
+GET http://localhost:8080/api/messages?start=1&userId=101
+
+<> 2020-04-12T031027.500.html
+
+###
+
+GET http://localhost:8080/api/messages?start=1&userId=101
+
+<> 2020-04-12T030913.500.html
+
+###
+
+GET http://localhost:8080/api/messages?start=1&userId=101
+
+<> 2020-04-12T030821.500.html
+
+###
+
+POST http://localhost:8080/api/messages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
+
+{
+  "pageId": "8388-83264-55",
+  "text": "qwerty007"
+}
+
+###
+
+POST http://localhost:8080/api/messages
+Content-Type: application/json
+
+{
+  "pageId": "8388-83264-55",
+  "text": "qwerty007"
+}
+
+###
+
 POST http://localhost:8080/api/sites-management/sites
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
@@ -432,62 +483,6 @@ GET http://localhost:8080/api/sites-management/sites/2
 Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
 
 <> 2020-04-08T121043.200.json
-
-###
-
-GET http://localhost:8080/api/sites-management/sites/2
-Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
-
-###
-
-GET http://localhost:8080/api/sites-management/sites/2
-
-###
-
-GET http://localhost:8080/api/sites-management/sites/2
-Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
-
-<> 2020-04-08T120850.200.json
-
-###
-
-GET http://localhost:8080/api/sites-management/sites/2
-
-<> 2020-04-08T120841.403.html
-
-###
-
-POST http://localhost:8080/api/signIn
-Content-Type: application/json
-
-{
-  "email": "kamilla.hairul@gmail.com",
-  "password": "qwerty007"
-}
-
-<> 2020-04-08T120749.403.html
-
-###
-
-POST http://localhost:8080/api/signIn
-Content-Type: application/json
-
-{
-  "email": "kamilla.hairul@gmail.com",
-  "password": "qwerty007"
-}
-
-<> 2020-04-08T120610.403.html
-
-###
-
-POST http://localhost:8080/signIn
-Content-Type: application/json
-
-{
-  "email": "kamilla.hairul@gmail.com",
-  "password": "qwerty007"
-}
 
 ###
 

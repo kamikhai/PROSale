@@ -89,11 +89,11 @@ public class MultipleEntryPointsSecurityConfig {
             http.authorizeRequests();
             http.logout().logoutUrl("/logout").logoutSuccessUrl("/signIn");
             http.formLogin()
-                    .loginPage("/signIn")
+                    .loginPage("/login")
                     .usernameParameter("email")
                     .passwordParameter("password")
                     .defaultSuccessUrl("/")
-                    .failureUrl("/signIn?error")
+                    .failureUrl("/login?error")
                     .permitAll();
             http.addFilter(new AnonymousAuthenticationFilter("anonymous"));
 

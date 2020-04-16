@@ -18,13 +18,10 @@ import javax.servlet.http.HttpSession;
 public class SignInController {
 
     @PreAuthorize("permitAll()")
-    @GetMapping("/signIn")
-    public ModelAndView getView() {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        System.out.println(authentication);
-        System.out.println(authentication.getAuthorities());
+    @GetMapping("/login")
+    public ModelAndView getView(Authentication authentication) {
         ModelAndView modelAndView = new ModelAndView();
-        if (authentication.getAuthorities().contains(new SimpleGrantedAuthority("ROLE_ANONYMOUS"))){
+        if (authentication == null){
             modelAndView.setViewName("signIn");
         } else {
             modelAndView.setViewName("redirect:/profile");

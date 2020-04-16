@@ -22,6 +22,7 @@
                             <li><a href="/products_women">Женская</a></li>
                             <li><a href="/products_men">Мужская</a></li>
                             <li><a href="/products_kids">Для детей</a></li>
+                            <li><a href="/support">Помощь</a></li>
                         </ul>
                     </div>
                     <!-- Nav End -->
@@ -43,7 +44,7 @@
                 </div>
                 <!-- User Login Info -->
                 <div class="user-login-info">
-                    <a href="/signIn"><img src="https://sun9-27.userapi.com/c857136/v857136859/13b398/78BwU-0ogLw.jpg" alt=""></a>
+                    <a href="/login"><img src="https://sun9-27.userapi.com/c857136/v857136859/13b398/78BwU-0ogLw.jpg" alt=""></a>
                 </div>
             </div>
 
