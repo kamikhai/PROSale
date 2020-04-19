@@ -1,3 +1,29 @@
+GET http://localhost:8080/api/admin/support/users
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
+
+<> 2020-04-16T020345.200.json
+
+###
+
+POST http://localhost:8080/api/signIn
+Content-Type: application/json
+
+{
+  "email": "kamilla.hairul@gmail.com",
+  "password": "qwerty007"
+}
+
+<> 2020-04-16T020314.200.json
+
+###
+
+GET http://localhost:8080/api/admin/support/users
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJwYXNzd29yZCI6IiQyYSQxMCRhUG0xTS5FdjhNOWVLRWdiRGk1bUFPd1pkby9ZMWVRZ0ZxdWJvaThJUW5sSlV1M2JRMlVjQyIsInN1cm5hbWUiOiJLaGFpcnVsbGluYSIsIm5hbWUiOiJLYW1pbGxhIiwiaWQiOjEwMSwiZW1haWwiOiJrYW1pbGxhLmhhaXJ1bEBnbWFpbC5jb20ifQ._JBpKi9ZaZrGyk8nsfAgWi5lxAyB5_kt8l9McMjji80
+
+<> 2020-04-16T020250.403.html
+
+###
+
 GET http://localhost:8080/api/messages?start=1&userId=101
 
 <> 2020-04-12T031327.200.json
@@ -452,37 +478,6 @@ Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWly
 }
 
 <> 2020-04-08T121350.500.html
-
-###
-
-POST http://localhost:8080/api/sites-management/sites
-Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
-
-{
-  "store_name": "HM"
-}
-
-<> 2020-04-08T121307.500.html
-
-###
-
-POST http://localhost:8080/api/sites-management/sites
-Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
-
-{
-  "store_name": "HM"
-}
-
-<> 2020-04-08T121049.200.json
-
-###
-
-GET http://localhost:8080/api/sites-management/sites/2
-Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5NyIsImVtYWlsIjoia2FtaWxsYS5oYWlydWxAZ21haWwuY29tIiwicm9sZSI6IkFETUlOIn0.CEKzX9nCUMQweuUIPg_nKMplQfFQOU4T7E_wrX3oZZY
-
-<> 2020-04-08T121043.200.json
 
 ###
 

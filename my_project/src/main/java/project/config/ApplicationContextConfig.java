@@ -21,11 +21,13 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
+import org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver;
 import project.executor.ExecutorServiceImpl;
 import project.services.ParseService;
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
+import java.util.Locale;
 import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -94,15 +96,18 @@ public class ApplicationContextConfig {
 
     @Bean
     public freemarker.template.Configuration configuration() {
-        return getConf().getConfiguration();
+        freemarker.template.Configuration configuration = getConf().getConfiguration();
+        configuration.setEncoding(new Locale("ru"), "utf-8");
+        return configuration;
     }
 
     @Bean
-    public ViewResolver viewResolver() {
-        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("template/");
-        viewResolver.setSuffix(".ftl");
-        return viewResolver;
+    public FreeMarkerViewResolver freemarkerViewResolver() {
+        FreeMarkerViewResolver resolver = new FreeMarkerViewResolver();
+        resolver.setPrefix("");
+        resolver.setContentType("text/html; charset=utf-8");
+        resolver.setSuffix(".ftl");
+        return resolver;
     }
 
     @Bean
@@ -114,7 +119,6 @@ public class ApplicationContextConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         HibernateJpaVendorAdapter hibernateJpaVendorAdapter = new HibernateJpaVendorAdapter();
         hibernateJpaVendorAdapter.setDatabase(Database.POSTGRESQL);
-//
         LocalContainerEntityManagerFactoryBean entityManagerFactory = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactory.setDataSource(hikariDataSource());
         entityManagerFactory.setPackagesToScan("project.models");

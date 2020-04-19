@@ -24,22 +24,29 @@
 
             $.ajax({
                 url: "/api/messages",
+                headers: {
+                    "Authorization" : "${token}"
+                },
                 method: "POST",
                 data: JSON.stringify(body),
                 contentType: "application/json",
                 dataType: "json",
                 complete: function () {
                     $('#messages').first().append('<div class="msg-right" >' + text + '</div >');
-                    // receiveMessage(userId)
+                    // sendMessage(userId)
                 }
             });
             document.getElementById('message').value = "";
         }
 
         function start(userId) {
+
             // sendMessage(userId, 'Login')
             $.ajax({
-                url: "/api/messages?start=1&userId=" + userId,
+                url: "/api/messages/start?userId=" + userId,
+                headers: {
+                    "Authorization" : "${token}"
+                },
                 method: "GET",
                 dataType: "json",
                 contentType: "application/json",
@@ -59,7 +66,10 @@
         // LONG POLLING
         function receiveMessage(userId) {
             $.ajax({
-                url: "/api/messages?admin=1&userId=" + userId,
+                url: "/api/admin/support?&userId=" + userId,
+                headers: {
+                    "Authorization" : "${token}"
+                },
                 method: "GET",
                 dataType: "json",
                 contentType: "application/json",
@@ -131,6 +141,7 @@
 </head>
 <body onload="start(${userId})">
 <#include "parts/header.ftl">
+${token}
 <!-- ##### Breadcumb Area Start ##### -->
 <div class="breadcumb_area bg-img"
      style="background-image: url(https://sun9-21.userapi.com/c205620/v205620545/cb8bc/Fn_crZrrCh0.jpg); margin-top: 85px">

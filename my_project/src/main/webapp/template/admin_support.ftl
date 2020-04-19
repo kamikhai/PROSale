@@ -14,8 +14,12 @@
     <script>
 
         function start() {
+            console.log('${token}');
             $.ajax({
-                url: "/api/admin/messages",
+                url: "/api/admin/support/users",
+                headers: {
+                    "Authorization" : "${token}"
+                },
                 method: "GET",
                 dataType: "json",
                 contentType: "application/json",

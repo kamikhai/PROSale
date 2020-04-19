@@ -7,16 +7,22 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import project.services.AuthService;
+import project.services.TokenService;
 import project.services.UserService;
 
 @Controller
 public class SupportController {
     @Autowired
     private UserService userService;
+    @Autowired
+    private AuthService authService;
 
     @GetMapping("/support")
     public String getChatPage(Model model, Authentication authentication, @RequestParam(required = false, name = "userId") Long userId) {
         if (authentication != null){
+            String token = authService.getToken(userService.findByEmail(authentication.getName()).get()).getToken();
+            model.addAttribute("token", token);
             if (authentication.getAuthorities().contains(new SimpleGrantedAuthority("ADMIN"))){
                 if (userId == null){
                     return "admin_support";

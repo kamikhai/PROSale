@@ -24,22 +24,26 @@
 
             $.ajax({
                 url: "/api/messages",
+                headers: {
+                    "Authorization" : "${token}"
+                },
                 method: "POST",
                 data: JSON.stringify(body),
                 contentType: "application/json",
                 dataType: "json",
                 complete: function () {
                     $('#messages').first().append('<div class="msg-right" >' + text + '</div >');
-                    // receiveMessage(userId)
                 }
             });
             document.getElementById('message').value = "";
         }
 
         function start(userId) {
-            // sendMessage(userId, 'Login')
             $.ajax({
-                url: "/api/messages?start=1&userId=" + userId,
+                url: "/api/messages/start?userId=" + userId,
+                headers: {
+                    "Authorization" : "${token}"
+                },
                 method: "GET",
                 dataType: "json",
                 contentType: "application/json",
@@ -62,6 +66,9 @@
         function receiveMessage(userId) {
             $.ajax({
                 url: "/api/messages?userId=" + userId,
+                headers: {
+                    "Authorization" : "${token}"
+                },
                 method: "GET",
                 dataType: "json",
                 contentType: "application/json",

@@ -4,15 +4,25 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
+import project.dto.ResponseFavouritesDto;
 import project.dto.ResponseProductDto;
 import project.dto.ResponseProductsDto;
+import project.models.FavouriteProduct;
 import project.models.Product;
+import project.models.User;
 import project.models.Who;
+import project.security.details.UserDetailsImpl;
+import project.services.FavouriteProductsService;
 import project.services.ProductService;
+import project.services.UserService;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/products-management")
@@ -21,6 +31,9 @@ public class ProductsRestController {
 
     @Autowired
     private ProductService productService;
+    @Autowired
+    private FavouriteProductsService favouriteProductsService;
+
 
     @GetMapping("/products/pagination")
     public ResponseProductsDto getProducts(@RequestParam("page") Integer page,
@@ -84,11 +97,39 @@ public class ProductsRestController {
 //        return ResponseEntity.ok(productService.findAll());
     }
 
-    @GetMapping("/product/{product-id}")
-    public ResponseProductDto getProduct(@PathVariable("product-id") Long id) {
-        return ResponseProductDto.builder()
-                .data(productService.find(id).get())
-                .build();
+    @PreAuthorize("isAuthenticated()")
+    @PostMapping("/products/favourite")
+    public ResponseEntity<String> addFavourite(@RequestParam(name = "product") Long productId) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getDetails();
+        Optional<Product> productCandidate = productService.find(productId);
+        if (productCandidate.isPresent()) {
+            Long id = favouriteProductsService.save(FavouriteProduct.fromProduct(productCandidate.get(), userDetails.getUser().getId()));
+            if (id == 0L){
+                return ResponseEntity.ok("Товар уже находится в избранном");
+            }
+            return ResponseEntity.ok("Товар успешно добавлен");
+        } else {
+            return ResponseEntity.status(404).body("Товар не найден");
+        }
     }
 
+    @PreAuthorize("isAuthenticated()")
+    @GetMapping("/products/favourite")
+    public ResponseEntity<ResponseFavouritesDto> getFavourites() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getDetails();
+        return ResponseEntity.ok(ResponseFavouritesDto.builder()
+                .data(favouriteProductsService.findAll(userDetails.getUser().getId()))
+                .build());
+    }
+
+    @PreAuthorize("isAuthenticated()")
+    @DeleteMapping("/products/favourite")
+    public ResponseEntity<String> deleteFavourite(@RequestParam(name = "product") Long productId) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getDetails();
+        boolean response = favouriteProductsService.delete(productId, userDetails.getUser().getId());
+        return response ? ResponseEntity.ok("Товар успешно удален") : ResponseEntity.status(404).body("Товар не найден");
+    }
 }

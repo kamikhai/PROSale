@@ -21,7 +21,7 @@
                         <ul>
                             <li><a href="/products_women">Женская</a></li>
                             <li><a href="/products_men">Мужская</a></li>
-                            <li><a href="/products_kids">Для детей</a></li>
+                            <li><a href="/products_kids">Детская</a></li>
                             <li><a href="/support">Помощь</a></li>
                         </ul>
                     </div>
@@ -40,7 +40,7 @@
                 </div>
                 <!-- Favourite Area -->
                 <div class="favourite-area">
-                    <a href="#"><img src="https://sun9-36.userapi.com/c857136/v857136859/13b3a6/-rviFla3oIU.jpg" alt=""></a>
+                    <a href="/favourites"><img src="https://sun9-36.userapi.com/c857136/v857136859/13b3a6/-rviFla3oIU.jpg" alt=""></a>
                 </div>
                 <!-- User Login Info -->
                 <div class="user-login-info">

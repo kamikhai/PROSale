@@ -13,6 +13,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ResponseProductsDto {
-    private List<Product> data;
+public class ResponseFavouritesDto {
+    private List<FavouriteProduct> data;
 }

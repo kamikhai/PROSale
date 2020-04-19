@@ -101,9 +101,9 @@
                     '                                    <div class="product-img">\n' +
                     '                                        <img src=' + this.imgUrl + ' alt="">\n' +
                     '                                        <div class="product-favourite">\n' +
-                    '                                            <a href="#"><img\n' +
+                    '                                            <a onclick="like('+this.id+')"><img\n' +
                     '                                                        src="https://sun9-15.userapi.com/c857136/v857136859/13b39f/1ipItgUShrw.jpg"\n' +
-                    '                                                        alt="" style="height: 60%; width: auto;"></a>\n' +
+                    '                                                        alt="Добавить в избранное" style="height: 60%; width: auto;"></a>\n' +
                     '                                        </div>\n' +
                     '                                    </div>\n' +
                     '                                    <div class="product-description">\n' +
@@ -120,6 +120,27 @@
         }
 
 
+        function like(productId) {
+            if (${auth} == 1){
+                $.ajax({
+                    url: "/api/products-management/products/favourite?product=" + productId ,
+                    method: "POST",
+                    headers: {
+                        "Authorization" : "${token}"
+                    },
+                    dataType: "json",
+                    contentType: "application/json",
+                    success: function (response) {
+                        alert(response)
+                    },
+                    error: function (response) {
+                        alert(response.responseText);
+                    }
+                })
+            } else {
+                alert("Необходимо авторизоваться");
+            }
+        }
     </script>
 </head>
 <body onload="receiveProducts()">
@@ -179,48 +200,25 @@
 
                     <div class="row" id="products">
 
-                        <#--                        <#list products as p>-->
-                        <#--                            <div class="col-12 col-sm-6 col-lg-4">-->
-                        <#--                                <div class="single-product-wrapper">-->
-                        <#--                                    <div class="product-img">-->
-                        <#--                                        <img src=${p.imgUrl!empty} alt="">-->
-                        <#--                                        <div class="product-favourite">-->
-                        <#--                                            <a href="#"><img-->
-                        <#--                                                        src="https://sun9-15.userapi.com/c857136/v857136859/13b39f/1ipItgUShrw.jpg"-->
-                        <#--                                                        alt="" style="height: 60%; width: auto;"></a>-->
-                        <#--                                        </div>-->
-                        <#--                                    </div>-->
-                        <#--                                    <div class="product-description">-->
-                        <#--                                        <span>${p.site.store_name}</span>-->
-                        <#--                                        <a href=${p.productUrl}>-->
-                        <#--                                            <h6>${p.productName}</h6>-->
-                        <#--                                        </a>-->
-                        <#--                                        <p class="product-price"><span-->
-                        <#--                                                    class="old-price">${p.oldPrice}</span> ${p.newPrice}</p>-->
-                        <#--                                    </div>-->
-                        <#--                                </div>-->
-                        <#--                            </div>-->
-                        <#--                        </#list>-->
-
 
                     </div>
                 </div>
-                <!-- Pagination -->
-                <nav aria-label="navigation">
-                    <ul class="pagination mt-50 mb-70">
-                        <li class="page-item"><a class="page-link" href="#"><img
-                                        src="https://sun9-4.userapi.com/c857136/v857136859/13b391/k8YcdUW7f8A.jpg"
-                                        alt="" style="height: 60%; width: auto"></a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">...</a></li>
-                        <li class="page-item"><a class="page-link" href="#">20</a></li>
-                        <li class="page-item"><a class="page-link" href="#"><img
-                                        src="https://sun9-53.userapi.com/c857136/v857136859/13b3ad/TKDFbeAhpj0.jpg"
-                                        alt="" style="height: 60%; width: auto;"></a></li>
-                    </ul>
-                </nav>
+<#--                <!-- Pagination &ndash;&gt;-->
+<#--                <nav aria-label="navigation">-->
+<#--                    <ul class="pagination mt-50 mb-70">-->
+<#--                        <li class="page-item"><a class="page-link" href="#"><img-->
+<#--                                        src="https://sun9-4.userapi.com/c857136/v857136859/13b391/k8YcdUW7f8A.jpg"-->
+<#--                                        alt="" style="height: 60%; width: auto"></a></li>-->
+<#--                        <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<#--                        <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+<#--                        <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<#--                        <li class="page-item"><a class="page-link" href="#">...</a></li>-->
+<#--                        <li class="page-item"><a class="page-link" href="#">20</a></li>-->
+<#--                        <li class="page-item"><a class="page-link" href="#"><img-->
+<#--                                        src="https://sun9-53.userapi.com/c857136/v857136859/13b3ad/TKDFbeAhpj0.jpg"-->
+<#--                                        alt="" style="height: 60%; width: auto;"></a></li>-->
+<#--                    </ul>-->
+<#--                </nav>-->
             </div>
         </div>
     </div>
