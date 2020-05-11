@@ -21,6 +21,7 @@ public class SupportController {
     @GetMapping("/support")
     public String getChatPage(Model model, Authentication authentication, @RequestParam(required = false, name = "userId") Long userId) {
         if (authentication != null){
+            System.out.println("support: " + authentication);
             String token = authService.getToken(userService.findByEmail(authentication.getName()).get()).getToken();
             model.addAttribute("token", token);
             if (authentication.getAuthorities().contains(new SimpleGrantedAuthority("ADMIN"))){
@@ -35,6 +36,6 @@ public class SupportController {
                 return "support";
             }
         }
-        return "redirect:/";
+        return "redirect:/login";
     }
 }

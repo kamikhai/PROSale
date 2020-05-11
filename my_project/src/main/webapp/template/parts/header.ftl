@@ -19,10 +19,10 @@
                     <!-- Nav Start -->
                     <div class="classynav">
                         <ul>
-                            <li><a href="/products_women">Женская</a></li>
-                            <li><a href="/products_men">Мужская</a></li>
-                            <li><a href="/products_kids">Детская</a></li>
-                            <li><a href="/support">Помощь</a></li>
+                            <li><a href="/products_women"><@spring.message "header.page.women"/></a></li>
+                            <li><a href="/products_men"><@spring.message "header.page.men"/></a></li>
+                            <li><a href="/products_kids"><@spring.message "header.page.kids"/></a></li>
+                            <li><a href="/support"><@spring.message "header.page.support"/></a></li>
                         </ul>
                     </div>
                     <!-- Nav End -->
@@ -31,13 +31,13 @@
 
             <!-- Header Meta Data -->
             <div class="header-meta d-flex clearfix justify-content-end">
-                <!-- Search Area -->
-                <div class="search-area">
-                    <form action="#" method="post">
-                        <input type="search" name="search" id="headerSearch" placeholder="Найти товар">
-                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </form>
-                </div>
+<#--                <!-- Search Area &ndash;&gt;-->
+<#--                <div class="search-area">-->
+<#--                    <form action="#" method="post">-->
+<#--                        <input type="search" name="search" id="headerSearch" placeholder="Найти товар">-->
+<#--                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>-->
+<#--                    </form>-->
+<#--                </div>-->
                 <!-- Favourite Area -->
                 <div class="favourite-area">
                     <a href="/favourites"><img src="https://sun9-36.userapi.com/c857136/v857136859/13b3a6/-rviFla3oIU.jpg" alt=""></a>

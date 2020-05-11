@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<#import "spring.ftl" as spring />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -15,6 +16,8 @@
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
     <script>
+
+
         function sendMessage(userId, text) {
             let body = {
                 userId: userId,
@@ -58,9 +61,22 @@
                     receiveMessage(userId);
                 }
             })
-            var objDiv = document.getElementById("messages");
-            objDiv.scrollTo(0, objDiv.scrollHeight);
+            // var objDiv = document.getElementById("messages");
+            // objDiv.scrollTo(0, objDiv.scrollHeight);
         }
+
+        function check(text) {
+            $.ajax({
+                url: "/check?text="+text,
+                method: "GET",
+                dataType: "json",
+                contentType: "application/json",
+                complete: function () {
+
+                }
+            })
+        }
+
 
         // LONG POLLING
         function receiveMessage(userId) {
@@ -79,6 +95,7 @@
                     receiveMessage(userId);
                 }
             })
+
         }
     </script>
     <style>
@@ -141,7 +158,7 @@
         }
     </style>
 </head>
-<body onload="start(${userId})">
+<body onload="start(${userId})" >
 <#include "parts/header.ftl">
 <!-- ##### Breadcumb Area Start ##### -->
 <div class="breadcumb_area bg-img"
@@ -150,7 +167,7 @@
         <div class="row h-100 align-items-center">
             <div class="col-12">
                 <div class="page-title text-center">
-                    <h2>Служба поддержки</h2>
+                    <h2><@spring.message "header.page.support"/></h2>
                 </div>
             </div>
         </div>
@@ -168,9 +185,9 @@
 </div>
 <div style="text-align: center">
     <div style="width: 700px; margin-left: auto; margin-right: auto;">
-        <input id="message" placeholder="Ваше сообщение" class="form-control" style="float: left; width: 64%; height: 50px">
+        <input id="message" placeholder="<@spring.message "support.page.message"/>" class="form-control" style="float: left; width: 64%; height: 50px">
         <button class="btn essence-btn" style="float:right; width: 34%;" onclick="sendMessage('${userId}',
-                $('#message').val())">Отправить
+                $('#message').val())"><@spring.message "support.page.send"/>
         </button>
     </div>
 </div>

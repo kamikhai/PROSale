@@ -1,6 +1,7 @@
 package project.services;
 
 import project.models.Site;
+import project.models.Who;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,6 +10,7 @@ public interface SiteService {
 
     public Long save(Site site);
     public List<Site> findAll();
+    public List<Site> findAllForWho(Who who);
 
     Optional<Site> find(Long id);
 

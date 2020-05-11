@@ -60,9 +60,9 @@ public class ProductsController {
     public ModelAndView getProductsPage(@RequestParam(required = false) Long store,
                                         @RequestParam(required = false) Integer select, Who who,
                                         Authentication authentication) {
+        System.out.println("Products: " + authentication);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("product");
-        List<Site> sites = siteService.findAll();
         List<Product> products;
         if (store != null) {
             products = productService.findAllByStoreAndWho(store, who);
@@ -84,7 +84,7 @@ public class ProductsController {
         modelAndView.addObject("token", token);
         modelAndView.addObject("auth", auth);
 //        modelAndView.addObject("userId", userId);
-        modelAndView.addObject("sites", sites);
+        modelAndView.addObject("sites", siteService.findAllForWho(who));
         modelAndView.addObject("first", true);
         modelAndView.addObject("empty", "http://localhost:8080/files/empty.jpg");
         return modelAndView;

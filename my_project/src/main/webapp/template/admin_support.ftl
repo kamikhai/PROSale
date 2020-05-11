@@ -1,4 +1,5 @@
 <!doctype html>
+<#import "spring.ftl" as spring />
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,7 +43,7 @@
         <div class="row h-100 align-items-center">
             <div class="col-12">
                 <div class="page-title text-center">
-                    <h2>Панель администратора</h2>
+                    <h2><@spring.message "adminSupport.page.panel"/></h2>
                 </div>
             </div>
         </div>
@@ -52,7 +53,7 @@
 <div class="order-details-confirmation" style="width: 1000px; margin-left: auto; margin-right: auto; min-height: 600px; margin-top: 40px">
 
     <div class="cart-page-heading">
-        <h5>Текущие чаты</h5>
+        <h5><@spring.message "adminSupport.page.currentChat"/></h5>
     </div>
 
     <ul class="order-details-form mb-4" id="users">

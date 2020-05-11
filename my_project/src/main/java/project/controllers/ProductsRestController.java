@@ -1,6 +1,9 @@
 package project.controllers;
 
+import javassist.Translator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.i18n.LocaleContextHolder;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
@@ -22,12 +25,14 @@ import project.services.ProductService;
 import project.services.UserService;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/products-management")
 @PreAuthorize("permitAll()")
 public class ProductsRestController {
+
 
     @Autowired
     private ProductService productService;
@@ -99,8 +104,10 @@ public class ProductsRestController {
 
     @PreAuthorize("isAuthenticated()")
     @PostMapping("/products/favourite")
-    public ResponseEntity<String> addFavourite(@RequestParam(name = "product") Long productId) {
+    public ResponseEntity<String> addFavourite(@RequestParam(name = "product") Long productId, Authentication auth) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        System.out.println("Add favourite: " + authentication);
+        System.out.println("Add favourite 2: " + auth);
         UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getDetails();
         Optional<Product> productCandidate = productService.find(productId);
         if (productCandidate.isPresent()) {
@@ -117,7 +124,10 @@ public class ProductsRestController {
     @PreAuthorize("isAuthenticated()")
     @GetMapping("/products/favourite")
     public ResponseEntity<ResponseFavouritesDto> getFavourites() {
+        Locale locale = LocaleContextHolder.getLocale();
+        System.out.println(locale);
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        System.out.println("Get favourite: " + authentication);
         UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getDetails();
         return ResponseEntity.ok(ResponseFavouritesDto.builder()
                 .data(favouriteProductsService.findAll(userDetails.getUser().getId()))
@@ -128,6 +138,7 @@ public class ProductsRestController {
     @DeleteMapping("/products/favourite")
     public ResponseEntity<String> deleteFavourite(@RequestParam(name = "product") Long productId) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        System.out.println("Delete favourite: " + authentication);
         UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getDetails();
         boolean response = favouriteProductsService.delete(productId, userDetails.getUser().getId());
         return response ? ResponseEntity.ok("Товар успешно удален") : ResponseEntity.status(404).body("Товар не найден");

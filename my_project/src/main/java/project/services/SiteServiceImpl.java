@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import project.models.Site;
+import project.models.Who;
 import project.repositories.SiteRepository;
 
 import java.util.List;
@@ -22,6 +23,11 @@ public class SiteServiceImpl implements SiteService {
     @Override
     public List<Site> findAll() {
         return siteRepository.findAll();
+    }
+
+    @Override
+    public List<Site> findAllForWho(Who who) {
+        return siteRepository.findAllForWho(who);
     }
 
     @Override

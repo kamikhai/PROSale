@@ -1,4 +1,5 @@
 <!doctype html>
+<#import "spring.ftl" as spring />
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,25 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://vk.com/doc99916294_544558697?hash=c23b98998fd962260c&dl=826844dc49a2e1a0fd">
-<#--    <script>-->
-<#--        function signIn() {-->
-<#--            var email = document.getElementById("email_address").value;-->
-<#--            var password = document.getElementById("password").value;-->
-
-<#--            const toSend = {-->
-<#--                email: email,-->
-<#--                password: password-->
-<#--            }-->
-<#--            var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance-->
-<#--            xmlhttp.open("POST", "/api/signIn");-->
-<#--            xmlhttp.setRequestHeader("Content-Type", "application/json");-->
-<#--            xmlhttp.send(JSON.stringify(toSend));-->
-<#--            xmlhttp.onreadystatechange = function () {-->
-<#--                alert("OK")-->
-<#--                document.getElementById('myform').submit();-->
-<#--            }-->
-<#--        }-->
-<#--    </script>-->
 </head>
 <body>
 <#include "parts/header.ftl">
@@ -37,7 +19,7 @@
         <div class="row h-100 align-items-center">
             <div class="col-12">
                 <div class="page-title text-center">
-                    <h2>Вход</h2>
+                    <h2><@spring.message "login.page.login"/></h2>
                 </div>
             </div>
         </div>
@@ -54,18 +36,24 @@
                     <div class="order-details-confirmation" style="text-align: center;">
 
                         <div class="col-12 mb-4">
-                            <label for="email_address">Email адрес <span>*</span></label>
+                            <label for="email_address"><@spring.message "signUp.page.email"/> <span>*</span></label>
                             <input type="email" class="form-control" id="email_address" value="" name="email">
                         </div>
                         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
                         <div class="col-12 mb-4">
-                            <label for="password">Пароль <span>*</span></label>
+                            <label for="password"><@spring.message "signUp.page.password"/> <span>*</span></label>
                             <input type="password" class="form-control" id="password" value="" name="password">
                         </div>
+                        <div class="col-12 mb-4">
+                        <div class="custom-control custom-checkbox d-block mb-2" style="text-align: left;">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" name="remember-me">
+                        <label class="custom-control-label" for="customCheck1"><@spring.message "login.page.rememberMe"/></label>
+                        </div>
+                        </div>
 
-                        <button type="submit" class="btn essence-btn">Войти</button>
+                        <button type="submit" class="btn essence-btn"><@spring.message "login.page.signIn"/></button>
                         </br></br>
-                        <a href="/registration">Еще не с нами? Зарегистрийруйтесь!</a>
+                        <a href="/registration"></a>
                     </div>
                 </form>
             </div>

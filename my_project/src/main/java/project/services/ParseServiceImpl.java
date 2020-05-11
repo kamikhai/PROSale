@@ -1,9 +1,11 @@
 package project.services;
 
+import lombok.SneakyThrows;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -22,6 +24,7 @@ public class ParseServiceImpl implements ParseService {
     @Autowired
     private ProductService productService;
 
+    @SneakyThrows
 //    @Scheduled(fixedDelay = 3600000)
     @Override
     public void parse() {
@@ -32,10 +35,11 @@ public class ParseServiceImpl implements ParseService {
         ) {
             for (Url url : site.getSaleUrls()
             ) {
-
                 Document doc = null;
                 if (site.getHasJS()) {
                     driver.get(url.getUrl());
+//                    JavascriptExecutor js = (JavascriptExecutor) driver;
+//                    js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
                     doc = Jsoup.parse(driver.getPageSource());
                 } else {
                     try {

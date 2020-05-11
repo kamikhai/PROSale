@@ -1,8 +1,10 @@
 package project.repositories;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import project.models.Site;
+import project.models.Who;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -13,6 +15,8 @@ import java.util.Optional;
 public class SiteRepositoryJpaImpl implements SiteRepository {
     @PersistenceContext
     private EntityManager entityManager;
+    @Autowired
+    private UrlRepository urlRepository;
 
     @Override
     @Transactional
@@ -77,6 +81,11 @@ public class SiteRepositoryJpaImpl implements SiteRepository {
         } else {
             return 0;
         }
+    }
+
+    @Override
+    public List<Site> findAllForWho(Who who) {
+        return urlRepository.findSitesForWho(who);
     }
 
     private int calculateOffset(int page, int size) {

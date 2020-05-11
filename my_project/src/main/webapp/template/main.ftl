@@ -1,4 +1,5 @@
 <!doctype html>
+<#import "spring.ftl" as spring/>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,12 +20,14 @@
         <div class="row h-100 align-items-center">
             <div class="col-12">
                 <div class="page-title text-center">
-                    <h2 style="color: black">Главная страница</h2>
+                    <h2 style="color: black"><@spring.message "main.page.main"/></h2>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 <!-- ##### Breadcumb Area End ##### -->
 <!-- ##### Blog Wrapper Area Start ##### -->
 <div class="blog-wrapper section-padding-80">
@@ -37,7 +40,7 @@
                     <img src="https://sun9-67.userapi.com/c206524/v206524585/dbf6d/Z9MUliIcRq8.jpg" alt="">
                     <!-- Post Title -->
                     <div class="post-title">
-                        <a>Выбирайте одежду со скидкой</a>
+                        <a><@spring.message "main.page.picture1"/></a>
                     </div>
                 </div>
             </div>
@@ -48,7 +51,7 @@
                     <img src="https://sun9-3.userapi.com/c206524/v206524585/dbf5d/i3fqNb4cOPU.jpg" alt="">
                     <!-- Post Title -->
                     <div class="post-title">
-                        <a>Находите удобную обувь</a>
+                        <a><@spring.message "main.page.picture2"/></a>
                     </div>
                 </div>
             </div>
@@ -59,7 +62,7 @@
                     <img src="https://sun9-47.userapi.com/c206524/v206524585/dbf65/tC7YxRJ_ilg.jpg" alt="">
                     <!-- Post Title -->
                     <div class="post-title">
-                        <a>Подбирайте подходящие аксессуары</a>
+                        <a><@spring.message "main.page.picture3"/></a>
                     </div>
                 </div>
             </div>
@@ -70,7 +73,7 @@
                     <img src="https://sun9-43.userapi.com/c206524/v206524585/dbfe8/Ap-JkDqIEOs.jpg" alt="">
                     <!-- Post Title -->
                     <div class="post-title">
-                        <a>Всегда оставайтесь в тренде</a>
+                        <a><@spring.message "main.page.picture4"/></a>
                     </div>
                 </div>
             </div>

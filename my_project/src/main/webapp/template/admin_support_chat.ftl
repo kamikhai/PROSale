@@ -1,4 +1,5 @@
 <!doctype html>
+<#import "spring.ftl" as spring />
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,6 +39,7 @@
             });
             document.getElementById('message').value = "";
         }
+
 
         function start(userId) {
 
@@ -149,7 +151,7 @@ ${token}
         <div class="row h-100 align-items-center">
             <div class="col-12">
                 <div class="page-title text-center">
-                    <h2>Чат с пользователем ${userId}</h2>
+                    <h2><@spring.message "adminChat.page.user"/> ${userId}</h2>
                 </div>
             </div>
         </div>
@@ -165,7 +167,7 @@ ${token}
         <input id="message" placeholder="Ваше сообщение" class="form-control"
                style="float: left; width: 64%; height: 50px">
         <button class="btn essence-btn" style="float:right; width: 34%; " onclick="sendMessage('${userId}',
-                $('#message').val())">Отправить
+                $('#message').val())"><@spring.message "support.page.send"/>
         </button>
     </div>
 </div>

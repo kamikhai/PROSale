@@ -23,7 +23,7 @@ Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFp
 
 ###
 
-DELETE http://localhost:8080/api/sites-management/sites/10
+DELETE http://localhost:8080/api/sites-management/sites/19
 Accept: */*
 Cache-Control: no-cache
 Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
@@ -82,5 +82,8 @@ GET http://localhost:8080/api/messages?start=1&userId=101
 ###
 GET http://localhost:8080/api/admin/support/users
 Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
+
+###
+GET http://localhost:8080/api/messages/notify?userId=102
 
 ###

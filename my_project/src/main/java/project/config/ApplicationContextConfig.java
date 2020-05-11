@@ -15,9 +15,14 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.session.jdbc.config.annotation.web.http.EnableJdbcHttpSession;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.handler.AbstractHandlerMapping;
 import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
@@ -32,10 +37,8 @@ import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Configuration
+@Component
 @PropertySource("classpath:application.properties")
-@ComponentScan(basePackages = "project", excludeFilters = {
-        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE, value = ParseService.class)})
 @EnableTransactionManagement
 @EnableScheduling
 public class ApplicationContextConfig {
@@ -86,29 +89,7 @@ public class ApplicationContextConfig {
         return mailSender;
     }
 
-    @Bean
-    public FreeMarkerConfigurer getConf() {
-        final FreeMarkerConfigurer result = new FreeMarkerConfigurer();
-        result.setTemplateLoaderPath("/template/");
-        result.setDefaultEncoding("UTF-8");
-        return result;
-    }
 
-    @Bean
-    public freemarker.template.Configuration configuration() {
-        freemarker.template.Configuration configuration = getConf().getConfiguration();
-        configuration.setEncoding(new Locale("ru"), "utf-8");
-        return configuration;
-    }
-
-    @Bean
-    public FreeMarkerViewResolver freemarkerViewResolver() {
-        FreeMarkerViewResolver resolver = new FreeMarkerViewResolver();
-        resolver.setPrefix("");
-        resolver.setContentType("text/html; charset=utf-8");
-        resolver.setSuffix(".ftl");
-        return resolver;
-    }
 
     @Bean
     public ExecutorService executorService() {
@@ -129,9 +110,9 @@ public class ApplicationContextConfig {
 
     private Properties additionalProperties() {
         Properties properties = new Properties();
-        properties.setProperty("hibernate.hbm2ddl.auto", "update");
-        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL95Dialect");
-        properties.setProperty("hibernate.show_sql", "false");
+        properties.setProperty("hibernate.hbm2ddl.auto", environment.getProperty("spring.jpa.hibernate.ddl-auto"));
+        properties.setProperty("hibernate.dialect", environment.getProperty("hibernate.dialect"));
+        properties.setProperty("hibernate.show_sql", environment.getProperty("hibernate.show_sql"));
         return properties;
     }
 
@@ -148,18 +129,9 @@ public class ApplicationContextConfig {
         return new HandlerMappingIntrospector();
     }
 
-//
-//    @Bean
-//    public AnonymousAuthenticationFilter anonymousAuthenticationFilter() {
-//        return new AnonymousAuthenticationFilter("anonymousKey");
-//    }
-//
-//    @Bean
-//    public AnonymousAuthenticationProvider anonymousAuthenticationProvider(){
-//        return new AnonymousAuthenticationProvider("anonymousKey");
-//    }
+
     @Bean
-    public ExecutorServiceImpl getExecutorService(){
+    public ExecutorServiceImpl getExecutorService() {
         return new ExecutorServiceImpl(30);
     }
 

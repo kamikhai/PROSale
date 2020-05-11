@@ -12,7 +12,8 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Entity(name = "url_table")
+@Entity
+@Table(name = "url_table")
 public class Url {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

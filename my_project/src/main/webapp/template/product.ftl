@@ -1,4 +1,5 @@
 <!doctype html>
+<#import "spring.ftl" as spring />
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -96,10 +97,15 @@
             document.getElementById('size').innerHTML = "";
             $('#size').first().append(response['data'].length);
             $.each(response['data'], function () {
+                var img = this.imgUrl;
+                if (img == null){
+                    img = '${empty}';
+                }
+                console.log(img);
                 $('#products').first().append('                            <div class="col-12 col-sm-6 col-lg-4">\n' +
                     '                                <div class="single-product-wrapper">\n' +
                     '                                    <div class="product-img">\n' +
-                    '                                        <img src=' + this.imgUrl + ' alt="">\n' +
+                    '                                        <img src=' + img + ' alt="">\n' +
                     '                                        <div class="product-favourite">\n' +
                     '                                            <a onclick="like('+this.id+')"><img\n' +
                     '                                                        src="https://sun9-15.userapi.com/c857136/v857136859/13b39f/1ipItgUShrw.jpg"\n' +
@@ -160,10 +166,10 @@
                     <!-- ##### Single Widget ##### -->
                     <div class="widget brands mb-50">
                         <!-- Widget Title 2 -->
-                        <p class="widget-title2 mb-30">Бренды</p>
+                        <p class="widget-title2 mb-30"><@spring.message "products.page.brands"/></p>
                         <div class="widget-desc">
                             <ul>
-                                <li><a onclick="reload()">Все бренды</a></li>
+                                <li><a onclick="reload()"><@spring.message "products.page.allBrands"/></a></li>
                                 <#list sites as s>
                                     <li><a onclick="chooseStore(${s.id})">${s.store_name}</a></li>
                                 </#list>
@@ -180,16 +186,16 @@
                             <div class="product-topbar d-flex align-items-center justify-content-between">
                                 <!-- Total Products -->
                                 <div class="total-products">
-                                    <p>Найдено <span id="size">0</span> товаров</p>
+                                    <p><@spring.message "products.page.found"/> <span id="size">0</span> <@spring.message "products.page.products"/></p>
                                 </div>
                                 <!-- Sorting -->
                                 <div class="product-sorting d-flex">
-                                    <p>Отсортировать по:</p>
+                                    <p><@spring.message "products.page.sortBy"/></p>
                                     <form method="get" id="myform" name="myform">
                                         <select name="select" id="sortByselect" onchange="sort()">
                                             <option value="1">-------------------</option>
-                                            <option value="2">Цена по убыванию</option>
-                                            <option value="3">Цена по возрастанию</option>
+                                            <option value="2"><@spring.message "products.page.priceDown"/></option>
+                                            <option value="3"><@spring.message "products.page.priceUp"/></option>
                                         </select>
                                         <input type="submit" class="d-none" value="">
                                     </form>

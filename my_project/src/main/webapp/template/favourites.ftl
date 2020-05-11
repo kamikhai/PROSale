@@ -1,4 +1,5 @@
 <!doctype html>
+<#import "spring.ftl" as spring />
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -94,7 +95,7 @@
         <div class="row h-100 align-items-center">
             <div class="col-12">
                 <div class="page-title text-center">
-                    <h2>Избранное</h2>
+                    <h2><@spring.message "favourites.page.favourites"/></h2>
                 </div>
             </div>
         </div>
@@ -112,7 +113,7 @@
                             <div class="product-topbar d-flex align-items-center justify-content-between">
                                 <!-- Total Products -->
                                 <div class="total-products">
-                                    <p>Найдено <span id="size">0</span> товаров</p>
+                                    <p><@spring.message "products.page.found"/> <span id="size">0</span> <@spring.message "products.page.products"/></p>
                                 </div>
                             </div>
                         </div>

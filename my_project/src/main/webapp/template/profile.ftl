@@ -1,4 +1,5 @@
 <!doctype html>
+<#import "spring.ftl" as spring />
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +11,8 @@
 </head>
 <body>
 <#include "parts/header.ftl">
-<a class="btn essence-btn" href="/logout" onclick="document.getElementById('logout').submit();">Logout</a>
+<div style="text-align: center; margin-top: 50px">
+<a class="btn essence-btn" href="/logout" onclick="document.getElementById('logout').submit();"><@spring.message "profile.page.logout"/></a>
+</div>
 </body>
 </html>

@@ -17,7 +17,12 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.AnonymousAuthenticationFilter;
+import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
+import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.web.filter.GenericFilterBean;
+
+import javax.sql.DataSource;
 
 @Configuration
 @EnableWebSecurity
@@ -86,8 +91,9 @@ public class MultipleEntryPointsSecurityConfig {
         @Override
         protected void configure(HttpSecurity http) throws Exception {
             http.antMatcher("/**");
-            http.authorizeRequests();
-            http.logout().logoutUrl("/logout").logoutSuccessUrl("/signIn");
+            http.authorizeRequests().and()
+                    .rememberMe().rememberMeParameter("remember-me").tokenRepository(persistentTokenRepository());
+
             http.formLogin()
                     .loginPage("/login")
                     .usernameParameter("email")
@@ -97,9 +103,24 @@ public class MultipleEntryPointsSecurityConfig {
                     .permitAll();
             http.addFilter(new AnonymousAuthenticationFilter("anonymous"));
 
+            http.logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                    .logoutSuccessUrl("/login")
+                    .deleteCookies("JSESSIONID", "remember-me")
+                    .invalidateHttpSession(true);
 
 
         }
+        @Autowired
+        private DataSource dataSource;
+
+        @Bean
+        public PersistentTokenRepository persistentTokenRepository() {
+            JdbcTokenRepositoryImpl jdbcTokenRepository = new JdbcTokenRepositoryImpl();
+            jdbcTokenRepository.setDataSource(dataSource);
+            return jdbcTokenRepository;
+        }
+
     }
+
 
 }
