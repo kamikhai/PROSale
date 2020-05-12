@@ -30,14 +30,6 @@ public class FavouriteProduct {
     private String who;
 
     public static FavouriteProduct fromProduct(Product product, Long userId){
-        String who = "";
-        if (product.getWho().equals(Who.WOMAN)){
-            who = "Женская";
-        } else if (product.getWho().equals(Who.MAN)){
-            who = "Мужская";
-        }else {
-            who = "Детская";
-        }
         return FavouriteProduct.builder()
                 .user_id(userId)
                 .site(product.getSite())
@@ -46,7 +38,7 @@ public class FavouriteProduct {
                 .imgUrl(product.getImgUrl())
                 .newPrice(product.getNewPrice())
                 .oldPrice(product.getOldPrice())
-                .who(who)
+                .who(product.getWho().name())
                 .build();
     }
 }

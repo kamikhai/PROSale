@@ -87,3 +87,16 @@ Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFp
 GET http://localhost:8080/api/messages/notify?userId=102
 
 ###
+GET http://localhost:8080/api/products-management/products/favourite?lang=ru
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDIiLCJlbWFpbCI6ImthbWlsbGEtaEBiay5ydSIsInJvbGUiOiJVU0VSIn0.gumURYSCChbyaINtgHpKR3KMyFGGoxNz6V3ERe1J4OY
+
+###
+POST http://localhost:8080/api/signIn
+Content-Type: application/json
+
+{
+  "email": "kamilla-h@bk.ru",
+  "password": "qwerty007"
+}
+
+###

@@ -24,6 +24,7 @@ import java.util.Locale;
 
 @Configuration
 @EnableWebMvc
+@ComponentScan(basePackages = {"project"})
 public class LocalizationConfig  implements WebMvcConfigurer {
     @Bean
     public FreeMarkerConfigurer getConf() {

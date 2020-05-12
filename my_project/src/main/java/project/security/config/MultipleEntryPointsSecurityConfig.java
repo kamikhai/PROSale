@@ -3,6 +3,7 @@ package project.security.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpMethod;
@@ -27,6 +28,7 @@ import javax.sql.DataSource;
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
+@ComponentScan({"project"})
 public class MultipleEntryPointsSecurityConfig {
     @Configuration
     @Order(1)
@@ -98,7 +100,7 @@ public class MultipleEntryPointsSecurityConfig {
                     .loginPage("/login")
                     .usernameParameter("email")
                     .passwordParameter("password")
-                    .defaultSuccessUrl("/")
+                    .defaultSuccessUrl("/main")
                     .failureUrl("/login?error")
                     .permitAll();
             http.addFilter(new AnonymousAuthenticationFilter("anonymous"));

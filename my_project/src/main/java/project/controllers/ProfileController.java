@@ -2,6 +2,7 @@ package project.controllers;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -21,17 +22,10 @@ public class ProfileController {
     @PreAuthorize("isAuthenticated()")
     @GetMapping("/profile")
     public String getProfile(Model model) {
-        model.addAttribute("profileForm", new ProfileForm());
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
+        model.addAttribute("user", userDetails.getUser());
         return "profile";
     }
 
-    @PostMapping("/profile")
-    public String updateProfile(Authentication authentication, @Valid ProfileForm form, BindingResult bindingResult, Model model) {
-        System.out.println(form);
-        UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
-        model.addAttribute("user", userDetails.getUser());
-        System.out.println(bindingResult.getAllErrors());
-        model.addAttribute("profileForm", form);
-        return "profile";
-    }
 }

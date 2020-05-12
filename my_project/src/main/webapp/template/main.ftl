@@ -87,22 +87,22 @@
 
 <div class="brands-area d-flex align-items-center justify-content-between">
     <div class="single-brands-logo">
-        <img src="" alt="">
+        <img src="https://psv4.userapi.com/c856424/u99916294/docs/d5/0349bb0d49b3/94de427e5c53d2fc1429b71ab4e68b2c.png?extra=kOj8tlm_4aelP4mueTx5DadvCZdR59PB4x6V0NRSds4Kg1EZrRodr2EX_OZ1aVg5HOyaSndqPN_5Cv3qp4ARiRlIEKbi4PbrNFzMmc8aHs-oyh9Pko4pRjoT3agIiN62RPwWKO8SovsTcOv4RWMKtQg" alt="">
     </div>
     <div class="single-brands-logo">
-        <img src="https://psv4.userapi.com/c856220/u99916294/docs/d17/09f5bfcbb0b3/brand7.png?extra=yiDM1X1Fo3Fn8LFuqOtIHQTn3Xhh-_C2783Q8zUuW5l0cyTvA4Zp591qJ2vmwTeBOU6eqmj7Ac73s7ItXHf0nLYHGtOdQWzvnQW2kgg2SrlF22Jnj66C_YSqwx_dks5BmE-4Z1OJXIb6FnYn01Q" alt="">
+        <img src="https://psv4.userapi.com/c856220/u99916294/docs/d17/4d42e4e81336/brand7.png?extra=W48EFjxziwG0hRDBi3jSkVxBeq0lxJ-01lL8Zi4h849mrOFVse8xkZa_UU5e5yFwsIkyUZ5w8qyuiIaZvQeRjnl4C3s4lW2ouro-7Ju7naHRG3-kxcfOjau4ebxsDUGRdwCl1dCDCxSi5jXlSflDjXY" alt="">
     </div>
     <div class="single-brands-logo">
-        <img src="https://psv4.userapi.com/c856220/u99916294/docs/d7/ae6b081f131c/brand8.png?extra=o8C3fNlV-vvH-LKbBES03j6x8fY1CGMfOWi1i21trFzCDWcf1DWeXjOHPHxOjQWmaUIZksHXi8Pj9SEQMkAAOMW6ZcyaLzqyGYFG6DYNWEl_5W-THOaDGOanmK9nF8u9KTgNPrniP7cMIyt82mk" alt="">
+        <img src="https://psv4.userapi.com/c856220/u99916294/docs/d4/3bc09b9daa78/brand9.png?extra=zJw3ycnoDi7zwWcdjBk_JQhgtckrQ2rfDLnt7gng-gqQUGcpGAmG8bwCi7E-MwcOYak4L71zFRg1bgJYB2b1nVEQ1yuuqqwL2g55dzboe214Z4NcQunvBeFzdkgz12VLLIZ2nse4UhZpy8rW2stNmQ4" alt="">
     </div>
     <div class="single-brands-logo">
-        <img src="https://psv4.userapi.com/c856220/u99916294/docs/d4/71fe3e95703e/brand9.png?extra=KdLuquh8FIn9IWAyJVgy0P5mbxJn-NspIxrlv5DqHoHj5Na1Fg6qAZYPYsd1ZmRU5RsIXKsRXXusbMwEn9BZ6J3hfHFH_zT_du2elKNvQVgvSFqZQ-pyjOdVivnzhLkOkVC0KjZjNX_MXrEqeSo" alt="">
+        <img src="https://psv4.userapi.com/c856220/u99916294/docs/d18/b49d23c895cf/brand10.png?extra=RSFD6g8936KKcaLMi316y6bUfEj97qcFRDYt4NpRG3DUsk3t2eoxFnR1TujPB8NtUh2ZyMhcJfJ-3_i84lMThFSwDBd4A5Lmg4KFmRnbjGkTi-CsSjNnXHRh0bPYr8WLPhShGvfaESYMJa3Ay9fJc3E" alt="">
     </div>
     <div class="single-brands-logo">
-        <img src="https://psv4.userapi.com/c856220/u99916294/docs/d18/75c7115b2c64/brand10.png?extra=ot5L2avqOj0s8Sv-yCJBZ3NoGbHCkwj3OlxJJPFZ8MbyVybelkAkS8zHQUmoLcgr3w3Jl3qJjKDAdBjuP6U2U1VKTRquL6QLXlbwVlgmFF9PTp0pFI1OGooRWzTzWjFTErjZxYvfVJnUve5AWp4" alt="">
+        <img src="https://psv4.userapi.com/c856424/u99916294/docs/d13/21346fb61a13/Love-Republic-Logo.png?extra=_kboKCdP8RxPel5ogN72qLcR486V6Pdp3BTBxzTkJO0-ROH9fcmN7xBcHaimMckv1wGSlQRtzSN5Bmher-3AuObMfsYlRp3G0YJp1E4U1Oniu94Xgu5OcjQV-5VbqzWjnd0OLlZwDcqn9w9Ra7FvU90" alt="">
     </div>
     <div class="single-brands-logo">
-        <img src="" alt="">
+        <img src="https://psv4.userapi.com/c856424/u99916294/docs/d8/ce82adc67af7/Oodji.png?extra=xISIuDEFXOhPHpShMEtuIoGDuy-6f0UJCKReznTW2P5t4OesEqPHIyQ5_ZqphPnIFclUvY6cHaY2SlLEdgRJ3BcEOuaLaYzFTsQxw4gjDNNX9QN9jQZvwJ3Ps0M2qQ_JsnQL8p2ICJnjSmH_5O3WsTE" alt="">
     </div>
 </div>
 </body>

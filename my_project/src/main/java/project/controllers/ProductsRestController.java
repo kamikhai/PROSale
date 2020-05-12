@@ -23,10 +23,12 @@ import project.security.details.UserDetailsImpl;
 import project.services.FavouriteProductsService;
 import project.services.ProductService;
 import project.services.UserService;
+import project.utils.UTF8Control;
 
 import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
+import java.util.ResourceBundle;
 
 @RestController
 @RequestMapping("/api/products-management")
@@ -111,6 +113,10 @@ public class ProductsRestController {
         UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getDetails();
         Optional<Product> productCandidate = productService.find(productId);
         if (productCandidate.isPresent()) {
+
+            System.out.println(productCandidate.get().getWho());
+            System.out.println(productCandidate.get().getWho().name());
+            System.out.println(productCandidate.get().getWho().toString());
             Long id = favouriteProductsService.save(FavouriteProduct.fromProduct(productCandidate.get(), userDetails.getUser().getId()));
             if (id == 0L){
                 return ResponseEntity.ok("Товар уже находится в избранном");
@@ -126,11 +132,18 @@ public class ProductsRestController {
     public ResponseEntity<ResponseFavouritesDto> getFavourites() {
         Locale locale = LocaleContextHolder.getLocale();
         System.out.println(locale);
+        ResourceBundle introLabels =
+                ResourceBundle.getBundle("messages/messages", locale, new UTF8Control());
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         System.out.println("Get favourite: " + authentication);
         UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getDetails();
+        List<FavouriteProduct> favouriteProducts = favouriteProductsService.findAll(userDetails.getUser().getId());
+        for (FavouriteProduct f: favouriteProducts
+             ) {
+            f.setWho(introLabels.getString(f.getWho()));
+        }
         return ResponseEntity.ok(ResponseFavouritesDto.builder()
-                .data(favouriteProductsService.findAll(userDetails.getUser().getId()))
+                .data(favouriteProducts)
                 .build());
     }
 

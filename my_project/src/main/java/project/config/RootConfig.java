@@ -37,11 +37,12 @@ import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Component
+@Configuration
 @PropertySource("classpath:application.properties")
 @EnableTransactionManagement
 @EnableScheduling
-public class ApplicationContextConfig {
+@ComponentScan(basePackages = {"project"})
+public class RootConfig {
 
     @Autowired
     private Environment environment;
@@ -122,11 +123,6 @@ public class ApplicationContextConfig {
         transactionManager.setEntityManagerFactory(entityManagerFactory);
 
         return transactionManager;
-    }
-
-    @Bean(name = "mvcHandlerMappingIntrospector")
-    public HandlerMappingIntrospector mvcHandlerMappingIntrospector() {
-        return new HandlerMappingIntrospector();
     }
 
 
