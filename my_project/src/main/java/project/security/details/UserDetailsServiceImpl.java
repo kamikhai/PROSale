@@ -24,12 +24,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         Optional<User> userOptional = userRepository.findUserByEmail(email);
         if (userOptional.isPresent()){
             User user = userOptional.get();
-//            TokenDto token = authService.getToken(user);
-//            Cookie cookie = new Cookie("token", token.getToken());
-//            cookie.setMaxAge(60*3);
-//            response.addCookie(cookie);
-//            cookie.setSecure(true);
-//            cookie.setHttpOnly(true);
             return new UserDetailsImpl(user);
         } throw new UsernameNotFoundException("User not found");
     }

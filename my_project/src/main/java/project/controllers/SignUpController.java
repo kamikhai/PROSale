@@ -56,14 +56,5 @@ public class SignUpController {
         }
     }
 
-//    @PostMapping("/profile")
-//    public String updateProfile(Authentication authentication, @Valid ProfileForm form, BindingResult bindingResult, Model model) {
-//        System.out.println(form);
-//        UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
-//        model.addAttribute("user", userDetails.getUser());
-//        System.out.println(bindingResult.getAllErrors());
-//        model.addAttribute("profileForm", form);
-//        return "profile";
-//    }
 
 }

@@ -53,7 +53,7 @@
 
                         <button type="submit" class="btn essence-btn"><@spring.message "login.page.signIn"/></button>
                         </br></br>
-                        <a href="/registration"></a>
+                        <a href="/registration"><@spring.message "login.page.signUp"/></a>
                     </div>
                 </form>
             </div>

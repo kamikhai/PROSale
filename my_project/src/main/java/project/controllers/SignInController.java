@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class SignInController {
 
-    @PreAuthorize("permitAll()")
+//    @PreAuthorize("permitAll()")
     @GetMapping("/login")
     public ModelAndView getView(Authentication authentication) {
         ModelAndView modelAndView = new ModelAndView();
