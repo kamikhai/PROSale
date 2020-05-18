@@ -2,9 +2,11 @@ package project.config;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import org.hibernate.context.internal.ThreadLocalSessionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
@@ -18,7 +20,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.session.jdbc.config.annotation.web.http.EnableJdbcHttpSession;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.TransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -41,7 +45,9 @@ import java.util.concurrent.Executors;
 @PropertySource("classpath:application.properties")
 @EnableTransactionManagement
 @EnableScheduling
+@EnableJpaRepositories("project.repositories")
 @ComponentScan(basePackages = {"project"})
+@EnableAspectJAutoProxy
 public class RootConfig {
 
     @Autowired
@@ -117,8 +123,24 @@ public class RootConfig {
         return properties;
     }
 
+//    @Bean
+//    public CommonsMultipartResolver multipartResolver() {
+//        CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
+//        multipartResolver.setMaxUploadSize(1000000000);
+//        return multipartResolver;
+//    }
+
+//    @Bean
+//    public PlatformTransactionManager platformTransactionManager(EntityManagerFactory entityManagerFactory) {
+//        JpaTransactionManager transactionManager = new JpaTransactionManager();
+//        transactionManager.setEntityManagerFactory(entityManagerFactory);
+//
+//        return transactionManager;
+//    }
+
+
     @Bean
-    public PlatformTransactionManager platformTransactionManager(EntityManagerFactory entityManagerFactory) {
+    public JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
         JpaTransactionManager transactionManager = new JpaTransactionManager();
         transactionManager.setEntityManagerFactory(entityManagerFactory);
 

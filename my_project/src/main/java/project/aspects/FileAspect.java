@@ -19,7 +19,7 @@ public class FileAspect {
     @Autowired
     private ExecutorService executorService;
 
-    @Pointcut("execution(* project.services.FileService.save(..))")
+    @Pointcut("execution(* project.services.ImageService.save(..))")
     public void selectAllMethodsAvaliable() {
 
     }

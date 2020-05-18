@@ -8,36 +8,37 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.ModelAndView;
-import project.services.FileService;
+import project.services.ImageService;
 
 @Controller
-public class FilesController {
+public class ImagesController {
     @Autowired
-    private FileService fileService;
+    private ImageService imageService;
 
 
-    @PreAuthorize("isAuthenticated()")
+    @PreAuthorize("permitAll()")
     @PostMapping("/files")
     public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile multipartFile) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String email = authentication.getName();
-        return ResponseEntity.ok().body(fileService.save(multipartFile, email));
+        System.out.println(email);
+        return ResponseEntity.ok().body(imageService.save(multipartFile, email));
     }
+
 
     @PreAuthorize("permitAll()")
     @GetMapping("/files/{file-name:.+}")
     public ResponseEntity<Resource> read(@PathVariable("file-name") String fileName) {
-        return ResponseEntity.ok().contentType(MediaType.IMAGE_JPEG).body(fileService.get(fileName));
+        return ResponseEntity.ok().contentType(MediaType.IMAGE_JPEG).body(imageService.get(fileName));
     }
 
 
     @PreAuthorize("permitAll()")
     @GetMapping("/storage")
-    public String getStoragePage() {
+    public String getStoragePage(Authentication authentication) {
+        System.out.println(authentication);
         return "file_upload";
     }
 

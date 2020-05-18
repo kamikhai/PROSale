@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Component(value = "fileRepositoryJpa")
-public class FileRepositoryJpaImpl implements FileRepository{
+public class ImagesRepositoryJpaImpl implements ImagesRepository {
     @PersistenceContext
     private EntityManager entityManager;
 

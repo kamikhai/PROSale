@@ -7,18 +7,18 @@ import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
-import project.repositories.FileRepository;
+import project.repositories.ImagesRepository;
 
 import java.io.File;
 import java.io.IOException;
 
 @Component
-public class FileServiceImpl implements FileService {
+public class ImageServiceImpl implements ImageService {
     @Autowired
     private Environment environment;
     @Autowired
     @Qualifier(value = "fileRepositoryJpa")
-    private FileRepository fileRepository;
+    private ImagesRepository imagesRepository;
     private final int length = 40;
 
     @Override
@@ -32,7 +32,7 @@ public class FileServiceImpl implements FileService {
         } catch (IOException e) {
             throw new IllegalStateException(e);
         }
-        fileRepository.save(project.models.File.builder()
+        imagesRepository.save(project.models.File.builder()
                             .name(name)
                             .db_Name(dbName)
                             .size(size)

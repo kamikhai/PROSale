@@ -95,7 +95,6 @@ public class MultipleEntryPointsSecurityConfig {
             http.antMatcher("/**");
             http.authorizeRequests().and()
                     .rememberMe().rememberMeParameter("remember-me").tokenRepository(persistentTokenRepository());
-
             http.formLogin()
                     .loginPage("/login")
                     .usernameParameter("email")
@@ -104,7 +103,7 @@ public class MultipleEntryPointsSecurityConfig {
                     .failureUrl("/login?error")
                     .permitAll();
             http.addFilter(new AnonymousAuthenticationFilter("anonymous"));
-
+//            http.csrf().disable();
             http.logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                     .logoutSuccessUrl("/login")
                     .deleteCookies("JSESSIONID", "remember-me")

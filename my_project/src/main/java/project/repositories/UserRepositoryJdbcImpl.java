@@ -39,8 +39,8 @@ public class UserRepositoryJdbcImpl implements UserRepository {
                 .surname(row.getString("surname"))
                 .email(row.getString("email"))
                 .password(row.getString("password"))
-                .role(Enum.valueOf(Role.class, row.getString("role")))
-                .state(Enum.valueOf(State.class,row.getString("state")))
+                .role(Role.values()[ row.getInt("role")])
+                .state(State.values()[row.getInt("state")])
                 .build();
 
     @Override
@@ -87,8 +87,8 @@ public class UserRepositoryJdbcImpl implements UserRepository {
             preparedStatement.setString(2, model.getSurname());
             preparedStatement.setString(3, model.getEmail());
             preparedStatement.setString(4, model.getPassword());
-            preparedStatement.setString(5, model.getState().toString());
-            preparedStatement.setString(6, model.getRole().toString());
+            preparedStatement.setInt(5, model.getState().ordinal());
+            preparedStatement.setInt(6, model.getRole().ordinal());
             return preparedStatement;
         }, keyHolder);
 

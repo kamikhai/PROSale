@@ -1,7 +1,9 @@
 <!doctype html>
-<#import "spring.ftl" as spring />
 <html lang="en">
 <head>
+    <meta name="_csrf" content="${_csrf.token}"/>
+    <!-- default header name is X-CSRF-TOKEN -->
+    <meta name="_csrf_header" content="${_csrf.headerName}"/>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -12,20 +14,23 @@
             crossorigin="anonymous"></script>
     <title>Document</title>
     <script>
-
-
         function sendFile() {
-            var form = $("#post_form")[0];
-            var data = new FormData(form);
+            let formData = new FormData();
+            let files = ($('#file'))[0]['files'];
+            [].forEach.call(files, function (file, i, files) {
+                formData.append("file", file);
+            });
+            var token = $("meta[name='_csrf']").attr("content");
+            var header = $("meta[name='_csrf_header']").attr("content");
             $.ajax({
                 type: "POST",
+                beforeSend: function(request) {
+                    request.setRequestHeader(header, token);},
                 enctype: 'multipart/form-data',
                 url: "/files",
-                data: data,
+                data: formData,
                 processData: false,
-                contentType: false,
-                cache: false,
-                timeout: 600000
+                contentType: false
             })
                 .done(function (response) {
                     alert(response)
@@ -38,15 +43,11 @@
 </head>
 <body>
 <div>
-    <form name="post_form" id="post_form" enctype="multipart/form-data">
-        <div id="namer">
-            <div id="namer-input">
-                <input type="file" id="file" name="file" placeholder="Choose your file"/>
-            </div>
-        </div>
-        <button type="button" class="btn btn-danger btn-lg" id="test_ajax" onclick="sendFile()" value="Load file">Load file
-        </button>
-    </form>
+    <input type="file" id="file" name="file" placeholder="Имя файла..."/>
+    <button onclick="sendFile()">
+        Upload
+    </button>
+    <input type="hidden" id="file_hidden">
 </div>
 </body>
 </html>

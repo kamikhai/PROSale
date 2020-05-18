@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Component(value = "fileRepositoryJdbc")
-public class FileRepositoryJdbcImpl implements FileRepository {
+public class ImagesRepositoryJdbcImpl implements ImagesRepository {
     private final String table_name = "files_table";
     //language=SQL
     private final String FIND_FILE = "select * from " + table_name + " where id = ?";

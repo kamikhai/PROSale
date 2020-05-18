@@ -61,13 +61,6 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8080/api/products-management/products
-Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
-
-###
-GET http://localhost:8080/api/products-management/products/WOMAN?sort=3
-
-###
 POST http://localhost:8080/api/messages
 Content-Type: application/json
 
@@ -75,6 +68,26 @@ Content-Type: application/json
   "pageId": "8388-83264-55",
   "text": "qwerty007"
 }
+###
+GET http://localhost:8080/api/products-management/products
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDEiLCJlbWFpbCI6ImthbWlsbGEuaGFpcnVsQGdtYWlsLmNvbSIsInJvbGUiOiJBRE1JTiJ9.E8gOxC7M1dyjX6UgxIRrRxDxvgbax-SVw3cqIg8gt2k
+
+###
+POST http://localhost:8080/api/signIn
+Content-Type: application/json
+
+{
+"email": "kamilla-h@bk.ru",
+"password": "qwerty007"
+}
+
+
+
+
+
+###
+GET http://localhost:8080/api/products-management/products/WOMAN?sort=3
+
 
 ###
 GET http://localhost:8080/api/messages?start=1&userId=101
@@ -90,13 +103,14 @@ GET http://localhost:8080/api/messages/notify?userId=102
 GET http://localhost:8080/api/products-management/products/favourite?lang=ru
 Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDIiLCJlbWFpbCI6ImthbWlsbGEtaEBiay5ydSIsInJvbGUiOiJVU0VSIn0.gumURYSCChbyaINtgHpKR3KMyFGGoxNz6V3ERe1J4OY
 
-###
-POST http://localhost:8080/api/signIn
-Content-Type: application/json
 
-{
-  "email": "kamilla-h@bk.ru",
-  "password": "qwerty007"
-}
+###
+GET http://localhost:8080/api/files/init
+
+###
+GET http://localhost:8080/api/users/1/files/png
+
+###
+GET http://localhost:8080/api/users/1/files/information
 
 ###
